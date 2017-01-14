@@ -49,6 +49,7 @@ exports.SECTIONS_DATA = [{
     {
       url: '/cms/month?d=x&group_id=1301752510104',
       title: 'Calendar'
-    }
-  ]
-}];
+    },
+    {"url":"/cms/page_view?d=x&piid=&vpid=1344353760609","title":"College and Career Calendar"},{"url":"/presentations","title":"Upcoming Presentations, Deadlines & Events"},{"url":"/cms/page_view?d=x&piid=&vpid=1349522606978","title":"Job Search Sites"},{"url":"/careerresources","title":"Career Resources"},{"url":"/careertrainingprograms","title":"Career Training Programs"},{"url":"/testing","title":"Career & College Testing"},{"url":"/collegeresources","title":"College Planning  Resources"},{"url":"/collegeapp","title":"College Applications & Essays"},{"url":"/specificschools","title":"Links to Specific Colleges & Universities"},{"url":"/letterofrecommendation","title":"Letter of Recommendation Information"},{"url":"/financialaid","title":"Financial Aid & Scholarships"},{"url":"/cms/page_view?d=x&piid=&vpid=1350722460838","title":"Information for Undocumented Students"},{"url":"/timelines","title":"Student Timelines by Grade Level"},{"url":"/cms/page_view?d=x&piid=&vpid=1351250114658","title":"Educational Resources"},{"url":"/legaldoc","title":"Legal Documents"},{"url":"/cms/page_view?d=x&piid=&vpid=1351250123718","title":"Staff"},{"url":"/donor","title":"Would You Like To Offer A Scholarship?"},{"url":"/cms/page_view?d=x&piid=&vpid=1433066601111","title":"2016-17 Seniors"}]
+}
+];
