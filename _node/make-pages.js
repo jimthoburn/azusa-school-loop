@@ -96,7 +96,7 @@ function removeReturnURLs(document, attribute) {
     (function(element) {
       var attributeValue = element.getAttribute(attribute);
       if (attributeValue.indexOf('return_url') > 0) {
-        element.setAttribute(attribute, attributeValue.replace(/&return_url=[0-9]*/g, ''));
+        element.setAttribute(attribute, attributeValue.replace(/&return_url=[^&]*/g, ''));
       }
     })(elements[index]);
   }
