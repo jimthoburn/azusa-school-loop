@@ -83,7 +83,7 @@ function replaceQueryString(document, attribute) {
   for (var index = 0; index < elements.length; index++) {
     (function(element) {
       var attributeValue = element.getAttribute(attribute);
-      if (attributeValue.indexOf('?') > 0 && attributeValue.indexOf('/portal') < 0) {
+      if (attributeValue.indexOf('?') > 0 && attributeValue.indexOf('/portal') < 0 && attributeValue.indexOf('/') === 0) {
         element.setAttribute(attribute, attributeValue.replace('?', '-'));
       }
     })(elements[index]);
