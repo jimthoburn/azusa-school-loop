@@ -36,6 +36,10 @@
   /* =Override default styles
   ----------------------------------------------- */
 
+  iframe {
+    width: 100%;
+  }
+
   body {
     margin-top: 0;
     font: 100%/1.5 "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif;
@@ -64,6 +68,7 @@
   }
 
   body #block_wide_main {
+    float: none;
     width: auto !important;
   }
 
@@ -123,6 +128,10 @@
 
   p.is-empty {
     display: none;
+  }
+
+  *[align*="center"] {
+    text-align: unset !important;
   }
 
   *[style*="background-color"] {
