@@ -15,7 +15,7 @@
     --link-color: var(--light-blue);
     --button-color: var(--light-blue);
     --headline-color: var(--light-blue);
-    --nav-background-color: black;
+    --nav-background-color: var(--light-blue);
     --nav-color: rgba(255, 255, 255, 0.9);
   }
 
@@ -47,8 +47,10 @@
   }
   */
 
+  /*
   body #container_header,
   body #container_home_header {
     background: url(/images/aztecs.jpg) center no-repeat;
     background-size: cover;
   }
+  */

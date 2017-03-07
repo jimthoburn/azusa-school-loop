@@ -32,11 +32,13 @@
   }
   */
 
+  /*
   body #container_header,
   body #container_home_header {
     background: url(/images/aztecs.jpg) center no-repeat;
     background-size: cover;
   }
+  */
 
   /*
   @import url(shim.css);
@@ -240,7 +242,7 @@
 
   .nav_public {
     background-image: none;
-    border-color: black;
+    border-color: rgb(57, 164, 208);
   }
 
   .footer_footnote {
@@ -269,7 +271,7 @@
   .nav_public {
     height: auto;
     min-height: 32px;
-    background: black;
+    background: rgb(57, 164, 208);
     color: rgba(255, 255, 255, 0.9);
   }
 
