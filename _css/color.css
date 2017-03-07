@@ -5,6 +5,7 @@
   :root {
     --light-blue: rgb(57, 164, 208);
     --lighter-blue: rgb(114, 211, 255);
+    --saturated-blue: rgb(42, 169, 255);
 
     --tungsten: rgb(40, 41, 43);
   }
@@ -14,7 +15,7 @@
     --link-color: var(--light-blue);
     --button-color: var(--light-blue);
     --headline-color: var(--light-blue);
-    --nav-background-color: var(--light-blue);
+    --nav-background-color: black;
     --nav-color: rgba(255, 255, 255, 0.9);
   }
 
@@ -23,6 +24,7 @@
     color: var(--text-color);
   }
 
+  /*
   a {
     color: var(--link-color);
   }
@@ -42,4 +44,11 @@
   }
   body > nav button {
     background-color: rgba(0, 0, 0, 0.3);
+  }
+  */
+
+  body #container_header,
+  body #container_home_header {
+    background: url(/images/aztecs.jpg) center no-repeat;
+    background-size: cover;
   }
