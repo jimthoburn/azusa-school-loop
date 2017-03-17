@@ -12,13 +12,11 @@ exports.HEAD_ELEMENT_HTML = `
 `;
 
 exports.LOGO_HTML = `
-<h2>
-    <a href="/">
-        <img src="/images/azusa.png" width="150" alt="" />
-        Azusa High School
-    </a>
-</h2>
-<p>Home of the Mighty Aztecs</p>
+<a href="/">
+  <img src="/images/azusa.png" width="150" alt="" />
+  <h2>Azusa High School</h2>
+  <p>Home of the Mighty Aztecs</p>
+</a>
 `;
 
 exports.FOOTER_HTML = `
