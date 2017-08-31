@@ -57,6 +57,10 @@
     padding-bottom: 1.25em;
   }
 
+  #container_content_home > .content_full > div:first-child > div:first-child {
+    width: auto !important;
+  }
+
   /*
   a {
     color: var(--link-color);

@@ -16,8 +16,8 @@ layout: null
 
 
 <!-- begin CSS Section -->
-<link rel="stylesheet" type="text/css" href="https://cdn.schoolloop.com/1701251047/static/lib/jquery/1.8/css/smoothness/jquery-ui-1.8.16.custom.css" media="all">
-        <link rel="stylesheet" type="text/css" href="https://cdn.schoolloop.com/portalcdn/version_1701251047ssl/css/master.css" media="screen">
+<link rel="stylesheet" type="text/css" href="https://cdn.schoolloop.com/1707171741/static/lib/jquery/1.8/css/smoothness/jquery-ui-1.8.16.custom.css" media="all">
+        <link rel="stylesheet" type="text/css" href="https://cdn.schoolloop.com/portalcdn/version_1707171741ssl/css/master.css" media="screen">
 
     <style type="text/css" media="screen">
         body {
@@ -35,11 +35,11 @@ layout: null
 
     }
 
-a.icon_rss {float: left; background: url(https://cdn.schoolloop.com/1701251047/img/icon_rss.gif) left no-repeat; display: block; height: 15px; font: normal 10px Verdana, Arial, Helvetica, sans-serif; color:#333333; text-decoration:none; padding: 0px 3px 0px 20px; margin: 0px 10px 1px 5px; text-align: left;}
-a.icon_rss:hover {background: url(https://cdn.schoolloop.com/1701251047/img/icon_rss.gif) left no-repeat; color: #000000; text-decoration: none;}
+a.icon_rss {float: left; background: url(https://cdn.schoolloop.com/1707171741/img/icon_rss.gif) left no-repeat; display: block; height: 15px; font: normal 10px Verdana, Arial, Helvetica, sans-serif; color:#333333; text-decoration:none; padding: 0px 3px 0px 20px; margin: 0px 10px 1px 5px; text-align: left;}
+a.icon_rss:hover {background: url(https://cdn.schoolloop.com/1707171741/img/icon_rss.gif) left no-repeat; color: #000000; text-decoration: none;}
 
-a.icon_translate {float: left; background: url(https://cdn.schoolloop.com/1701251047/img/icon_translate.gif) left no-repeat; display: block; height: 15px; font: normal 10px Verdana, Arial, Helvetica, sans-serif; color:#333333; text-decoration:none; padding: 0px 3px 0px 28px; margin: 0px 0px 1px 5px; text-align: left;}
-a.icon_translate:hover {background: url(https://cdn.schoolloop.com/1701251047/img/icon_translate.gif) left no-repeat; color: #000000; text-decoration: none;}
+a.icon_translate {float: left; background: url(https://cdn.schoolloop.com/1707171741/img/icon_translate.gif) left no-repeat; display: block; height: 15px; font: normal 10px Verdana, Arial, Helvetica, sans-serif; color:#333333; text-decoration:none; padding: 0px 3px 0px 28px; margin: 0px 0px 1px 5px; text-align: left;}
+a.icon_translate:hover {background: url(https://cdn.schoolloop.com/1707171741/img/icon_translate.gif) left no-repeat; color: #000000; text-decoration: none;}
 
 h1 {font-family: Arial, Helvetica, Geneva, sans-serif; font-weight: 400; font-size: 28px; color: #666; margin: 0px 0px 10px 0px; padding: 0px 0px 0px 0px; border-bottom:#cccccc solid 1px;}
 h2 {font-family: Arial, Helvetica, Geneva, sans-serif; font-weight: 400; font-size: 22px; color: #333; margin: 7px 0px 0px 0px; padding: 0px 0px; text-transform: uppercase;}
@@ -203,7 +203,7 @@ a.icon_delete:hover {
 .site_map .section_row_section {padding: 5px 5px 0px 5px; vertical-align: middle; font-weight: normal}
 
 
-.site_map .page_row {padding: 5px; background: url('https://cdn.schoolloop.com/1701251047/img/icon_site_map_page.gif') 20px no-repeat; padding-left: 45px; vertical-align: middle; margin: 0px;}
+.site_map .page_row {padding: 5px; background: url('https://cdn.schoolloop.com/1707171741/img/icon_site_map_page.gif') 20px no-repeat; padding-left: 45px; vertical-align: middle; margin: 0px;}
 .site_map .page_row_highlight {background: #ffffbb; margin: 0px 0px 0px 0px; height: 13px; padding: 3px 0px 3px 35px; vertical-align: middle;}
 
 .site_map .page_row {cursor:move}
@@ -218,8 +218,8 @@ a.icon_delete:hover {
 
 .site_map_right {font-size: 11px; padding-top: 5px; float: right;}
 
-.site_map .site_map_homepage_icon {background: #faf6da url('https://cdn.schoolloop.com/1701251047/img/icon_site_map_page.gif') left no-repeat;}
-.site_map .site_map_page {background: #fff url('https://cdn.schoolloop.com/1701251047/img/icon_site_map_page.gif') left no-repeat;}
+.site_map .site_map_homepage_icon {background: #faf6da url('https://cdn.schoolloop.com/1707171741/img/icon_site_map_page.gif') left no-repeat;}
+.site_map .site_map_page {background: #fff url('https://cdn.schoolloop.com/1707171741/img/icon_site_map_page.gif') left no-repeat;}
 
 .site_map .site_map_section {margin-bottom:2px; padding-top: 0px;}
 
@@ -1247,7 +1247,7 @@ text-decoration:none;
 }
 
 
-.nav_public a:hover{
+.nav_public a:hover, .nav_public a:focus {
 color: #ffffff;
 background:  url(http://ahs-ausd-ca.schoolloop.com/simg/blue_light_black/f/f3_nav_bg.gif) bottom;
 text-decoration:none;
@@ -1261,52 +1261,50 @@ text-decoration:none;
 
 
 
-
-
-
 /* ######### Style for Drop Down Menu ######### */
 
 
+/* ***** dropmenudiv_a and .dropmenudiv_a a and .dropmenudiv_a a:hover styles updated to maintain custom or global style
+            when moved by the accessible menu javascript (accessible_dropdown.js) ****** */
 .dropmenudiv_a{
 position:absolute;
 font-family: Arial, Helvetica, sans-serif; font-weight: normal; font-size: 11px;
 width: 175px;
-background: #ffffff ;
 
-vertical-align:middle;
+background-color: #ffffff !important;
+
+vertical-align:middle !important;
 voice-family: "\"}\"";
 voice-family: inherit;
-border-right: 1px #000000 solid;border-bottom: 1px #000000 solid;border-left: 1px #000000 solid;margin: -1px 0px 0px 0px;
-padding: 3px 0px 0px 0px;
+border-right: 1px #000000 solid !important;border-bottom: 1px #000000 solid !important;border-left: 1px #000000 solid !important;margin: -1px 0px 0px 0px !important;
+padding: 3px 0px 0px 0px !important;
 visibility: hidden;
-text-align: left;
+text-align: left !important;
 z-index:500;
 }
 
-
-
 .dropmenudiv_a a{
-display: block;
-background: ;
-margin: 0px 0px 0px 0px;
-padding: 2px 10px 2px 10px;
-color: ;
-text-decoration:none;
+    display: block;
+    text-align: left !important;
+    background-color:  !important;
+    background-image: none !important;
+
+    margin: 0px 0px 0px 0px !important;
+    padding: 2px 10px 2px 10px !important;
+    color: #059 !important;
+    text-decoration:none !important;
 }
 
 * html .dropmenudiv_a a{ /*IE only hack*/
 width: 100%;
 }
 
-.dropmenudiv_a a:hover{ /*THEME CHANGE HERE*/
-
-background: #ffffbb;
-color: ;
-text-decoration: none;
-z-index:500;
+.dropmenudiv_a a:hover, .dropmenudiv_a a:focus{ /*THEME CHANGE HERE*/
+    background: #ffffbb !important;;
+    color: #ff9900 !important;
+    text-decoration: none;
+    z-index:500;
 }
-
-
 
 
 .nav_container{width: auto; height: 33px;
@@ -1566,7 +1564,7 @@ width:100%;
 
 .ajax_accordion_content, .cal_Detail_holder, .prog_Detail_holder, .curAss_Detail_holder {
     display:none;
-    background: url(https://cdn.schoolloop.com/1701251047/img/accordion_content_bottom.png) bottom no-repeat;
+    background: url(https://cdn.schoolloop.com/1707171741/img/accordion_content_bottom.png) bottom no-repeat;
     border-right: 1px #f90 solid;
     padding-left: 3px;
     padding-right 10px;
@@ -1592,68 +1590,68 @@ border:1px solid black;
 width:32px;
 height:16px;
 }
-  a.icon_rss {float: left; background: url(https://cdn.schoolloop.com/1701251047/img/icon_rss.gif) left no-repeat; display: block; height: 15px; font: normal 10px Verdana, Arial, Helvetica, sans-serif; color:#333333; text-decoration:none; padding: 0px 3px 0px 20px; margin: 0px 10px 1px 5px; text-align: left;}
-  a.icon_rss:hover {background: url(https://cdn.schoolloop.com/1701251047/img/icon_rss.gif) left no-repeat; color: #000000; text-decoration: none;}
+  a.icon_rss {float: left; background: url(https://cdn.schoolloop.com/1707171741/img/icon_rss.gif) left no-repeat; display: block; height: 15px; font: normal 10px Verdana, Arial, Helvetica, sans-serif; color:#333333; text-decoration:none; padding: 0px 3px 0px 20px; margin: 0px 10px 1px 5px; text-align: left;}
+  a.icon_rss:hover {background: url(https://cdn.schoolloop.com/1707171741/img/icon_rss.gif) left no-repeat; color: #000000; text-decoration: none;}
 
-  a.icon_translate {float: left; background: url(https://cdn.schoolloop.com/1701251047/img/icon_translate.gif) left no-repeat; display: block; height: 15px; font: normal 10px Verdana, Arial, Helvetica, sans-serif; color:#333333; text-decoration:none; padding: 0px 3px 0px 28px; margin: 0px 0px 1px 5px; text-align: left;}
-  a.icon_translate:hover {background: url(https://cdn.schoolloop.com/1701251047/img/icon_translate.gif) left no-repeat; color: #000000; text-decoration: none;}
+  a.icon_translate {float: left; background: url(https://cdn.schoolloop.com/1707171741/img/icon_translate.gif) left no-repeat; display: block; height: 15px; font: normal 10px Verdana, Arial, Helvetica, sans-serif; color:#333333; text-decoration:none; padding: 0px 3px 0px 28px; margin: 0px 0px 1px 5px; text-align: left;}
+  a.icon_translate:hover {background: url(https://cdn.schoolloop.com/1707171741/img/icon_translate.gif) left no-repeat; color: #000000; text-decoration: none;}
 
   #translate {width: auto; margin-top: 10px; text-align: center;}
   #translate img{padding: 10px;}
 
-  a.icon_settings {text-align: left; display: block; width: auto; background: url(https://cdn.schoolloop.com/1701251047/img/icon_settings.png) no-repeat top left; font-size: 13px; color: #4A719E; text-decoration:none; padding: 9px 10px 9px 28px; line-height: 15px; border-left: 1px #fff solid;}
-  a.icon_settings:hover {background: #f90 url(https://cdn.schoolloop.com/1701251047/img/icon_settings.png) no-repeat bottom left; color: #fff; text-decoration:none;}
+  a.icon_settings {text-align: left; display: block; width: auto; background: url(https://cdn.schoolloop.com/1707171741/img/icon_settings.png) no-repeat top left; font-size: 13px; color: #4A719E; text-decoration:none; padding: 9px 10px 9px 28px; line-height: 15px; border-left: 1px #fff solid;}
+  a.icon_settings:hover {background: #f90 url(https://cdn.schoolloop.com/1707171741/img/icon_settings.png) no-repeat bottom left; color: #fff; text-decoration:none;}
 
-  a.icon_settings_module {text-align: left; height: 21px; display: block; background: url(https://cdn.schoolloop.com/1701251047/img/icon_settings.png) no-repeat; font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; color: #4A719E; text-decoration:none; margin-top: 10px; padding: 10px 2px 2px 32px;}
-  a.icon_settings_module:hover {display: block; background: #f90 url(https://cdn.schoolloop.com/1701251047/img/icon_settings.png) bottom left no-repeat; color: #fff; text-decoration:none; }
+  a.icon_settings_module {text-align: left; height: 21px; display: block; background: url(https://cdn.schoolloop.com/1707171741/img/icon_settings.png) no-repeat; font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; color: #4A719E; text-decoration:none; margin-top: 10px; padding: 10px 2px 2px 32px;}
+  a.icon_settings_module:hover {display: block; background: #f90 url(https://cdn.schoolloop.com/1707171741/img/icon_settings.png) bottom left no-repeat; color: #fff; text-decoration:none; }
 
-  a.icon_print {text-align:left; text-indent: -9000px; display: block; background: transparent url(https://cdn.schoolloop.com/1701251047/img/icon_print.png) center no-repeat; height: 25px; width: 35px; text-decoration:none;}
-  a.icon_print:hover {background: #f90 url(https://cdn.schoolloop.com/1701251047/img/icon_print.png) center no-repeat; text-decoration:none;}
+  a.icon_print {text-align:left; text-indent: -9000px; display: block; background: transparent url(https://cdn.schoolloop.com/1707171741/img/icon_print.png) center no-repeat; height: 25px; width: 35px; text-decoration:none;}
+  a.icon_print:hover {background: #f90 url(https://cdn.schoolloop.com/1707171741/img/icon_print.png) center no-repeat; text-decoration:none;}
 
-  a.icon_print {text-align:left; text-indent: -9000px; display: block; background: transparent url(https://cdn.schoolloop.com/1701251047/img/icon_print.png) center no-repeat; height: 25px; width: 35px; text-decoration:none;}
-  a.icon_print:hover {background: #f90 url(https://cdn.schoolloop.com/1701251047/img/icon_print.png) center no-repeat; text-decoration:none;}
+  a.icon_print {text-align:left; text-indent: -9000px; display: block; background: transparent url(https://cdn.schoolloop.com/1707171741/img/icon_print.png) center no-repeat; height: 25px; width: 35px; text-decoration:none;}
+  a.icon_print:hover {background: #f90 url(https://cdn.schoolloop.com/1707171741/img/icon_print.png) center no-repeat; text-decoration:none;}
 
-  a.icon_cal_day {text-align:left; text-indent: -9000px; display: block; background: transparent url(https://cdn.schoolloop.com/1701251047/img/icon_cal_day.png) center no-repeat; height: 25px; width: 30px; text-decoration:none;}
-  a.icon_cal_day:hover {background: #f90 url(https://cdn.schoolloop.com/1701251047/img/icon_cal_day.png) center no-repeat; text-decoration:none;}
+  a.icon_cal_day {text-align:left; text-indent: -9000px; display: block; background: transparent url(https://cdn.schoolloop.com/1707171741/img/icon_cal_day.png) center no-repeat; height: 25px; width: 30px; text-decoration:none;}
+  a.icon_cal_day:hover {background: #f90 url(https://cdn.schoolloop.com/1707171741/img/icon_cal_day.png) center no-repeat; text-decoration:none;}
 
-  a.icon_cal_week {text-align:left; text-indent: -9000px; display: block; background: transparent url(https://cdn.schoolloop.com/1701251047/img/icon_cal_week.png) center no-repeat; height: 25px; width: 30px; text-decoration:none;}
-  a.icon_cal_week:hover {background: #f90 url(https://cdn.schoolloop.com/1701251047/img/icon_cal_week.png) center no-repeat; text-decoration:none;}
+  a.icon_cal_week {text-align:left; text-indent: -9000px; display: block; background: transparent url(https://cdn.schoolloop.com/1707171741/img/icon_cal_week.png) center no-repeat; height: 25px; width: 30px; text-decoration:none;}
+  a.icon_cal_week:hover {background: #f90 url(https://cdn.schoolloop.com/1707171741/img/icon_cal_week.png) center no-repeat; text-decoration:none;}
 
-  a.icon_cal_month {text-align:left; text-indent: -9000px; display: block; background: transparent url(https://cdn.schoolloop.com/1701251047/img/icon_cal_month.png) center no-repeat; height: 25px; width: 30px; text-decoration:none;}
-  a.icon_cal_month:hover {background: #f90 url(https://cdn.schoolloop.com/1701251047/img/icon_cal_month.png) center no-repeat; text-decoration:none;}
+  a.icon_cal_month {text-align:left; text-indent: -9000px; display: block; background: transparent url(https://cdn.schoolloop.com/1707171741/img/icon_cal_month.png) center no-repeat; height: 25px; width: 30px; text-decoration:none;}
+  a.icon_cal_month:hover {background: #f90 url(https://cdn.schoolloop.com/1707171741/img/icon_cal_month.png) center no-repeat; text-decoration:none;}
 
-  a.icon_next {text-indent: 9000px; display: block; background: transparent url(https://cdn.schoolloop.com/1701251047/img/icon_arrow_next.png) top no-repeat; height: 25px; width: 20px; text-decoration:none;}
-  a.icon_next:hover {background:  url(https://cdn.schoolloop.com/1701251047/img/icon_arrow_next.png) bottom no-repeat; text-decoration:none;}
+  a.icon_next {text-indent: -9000px; display: block; background: transparent url(https://cdn.schoolloop.com/1707171741/img/icon_arrow_next.png) top no-repeat; height: 25px; width: 20px; text-decoration:none;}
+  a.icon_next:hover {background:  url(https://cdn.schoolloop.com/1707171741/img/icon_arrow_next.png) bottom no-repeat; text-decoration:none;}
 
-  a.icon_previous {text-indent: -9000px; display: block; background: transparent url(https://cdn.schoolloop.com/1701251047/img/icon_arrow_previous.png) top no-repeat; height: 25px; width: 20px; text-decoration:none;}
-  a.icon_previous:hover {background:  url(https://cdn.schoolloop.com/1701251047/img/icon_arrow_previous.png) bottom no-repeat; text-decoration:none;}
+  a.icon_previous {text-indent: -9000px; display: block; background: transparent url(https://cdn.schoolloop.com/1707171741/img/icon_arrow_previous.png) top no-repeat; height: 25px; width: 20px; text-decoration:none;}
+  a.icon_previous:hover {background:  url(https://cdn.schoolloop.com/1707171741/img/icon_arrow_previous.png) bottom no-repeat; text-decoration:none;}
 
-  a.btn_module {text-align: left; height: 17px; display: block; background: url(https://cdn.schoolloop.com/1701251047/img/btn_module.gif) repeat-x; font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; color: #3366cc; text-decoration:none; margin: 0px; padding: 5px 10px 2px 10px; border: 1px #dfdfdf solid;}
-  a.btn_module:hover {display: block; background: #ffffbb url(https://cdn.schoolloop.com/1701251047/img/btn_module.gif) bottom repeat-x; color: #3366cc; text-decoration:underline; }
-
-
-  a.icon_loopmail_sm {text-indent: -9000px; float: left; display: block; background: transparent url(https://cdn.schoolloop.com/1701251047/img/icon_loopmail_sm.png) center no-repeat; height: 18px; width: 25px; text-decoration:none;}
-  a.icon_loopmail_sm:hover {background: #f90 url(https://cdn.schoolloop.com/1701251047/img/icon_loopmail_sm.png) center no-repeat; text-decoration:none;}
-
-  a.icon_loopmail_all {background: transparent url(https://cdn.schoolloop.com/1701251047/img/icon_loopmail_sm.png) center left no-repeat; padding: 5px 5px 5px 25px; text-decoration:none;}
-  a.icon_loopmail_all:hover {color: #f90; background: url(https://cdn.schoolloop.com/1701251047/img/icon_loopmail_sm.png) center left no-repeat; text-decoration:none;}
-
-  a.icon_dropbox_link {background: transparent url(https://cdn.schoolloop.com/1701251047/img/icon_dropbox_sm.png) center left no-repeat; padding: 5px 5px 5px 25px; text-decoration:none;}
-  a.icon_dropbox_link:hover {color: #f90; background: url(https://cdn.schoolloop.com/1701251047/img/icon_dropbox_sm.png) center left no-repeat; text-decoration:none;}
+  a.btn_module {text-align: left; height: 17px; display: block; background: url(https://cdn.schoolloop.com/1707171741/img/btn_module.gif) repeat-x; font-family: Arial, Helvetica, sans-serif; font-weight: bold; font-size: 12px; color: #3366cc; text-decoration:none; margin: 0px; padding: 5px 10px 2px 10px; border: 1px #dfdfdf solid;}
+  a.btn_module:hover {display: block; background: #ffffbb url(https://cdn.schoolloop.com/1707171741/img/btn_module.gif) bottom repeat-x; color: #3366cc; text-decoration:underline; }
 
 
-  a.icon_site_sm {text-indent: -9000px; float: left; display: block; background: transparent url(https://cdn.schoolloop.com/1701251047/img/icon_course_site.png) center no-repeat; height: 18px; width: 25px; text-decoration:none;}
-  a.icon_site_sm:hover {background: #f90 url(https://cdn.schoolloop.com/1701251047/img/icon_course_site.png) center no-repeat; text-decoration:none;}
+  a.icon_loopmail_sm {text-indent: -9000px; float: left; display: block; background: transparent url(https://cdn.schoolloop.com/1707171741/img/icon_loopmail_sm.png) center no-repeat; height: 18px; width: 25px; text-decoration:none;}
+  a.icon_loopmail_sm:hover {background: #f90 url(https://cdn.schoolloop.com/1707171741/img/icon_loopmail_sm.png) center no-repeat; text-decoration:none;}
 
-  .icon_download_file {background: url(https://cdn.schoolloop.com/1701251047/img/icon_download_file.png) top right no-repeat;}
-  .icon_download_file:hover {background: url(https://cdn.schoolloop.com/1701251047/img/icon_download_file.png) top right no-repeat;}
+  a.icon_loopmail_all {background: transparent url(https://cdn.schoolloop.com/1707171741/img/icon_loopmail_sm.png) center left no-repeat; padding: 5px 5px 5px 25px; text-decoration:none;}
+  a.icon_loopmail_all:hover {color: #f90; background: url(https://cdn.schoolloop.com/1707171741/img/icon_loopmail_sm.png) center left no-repeat; text-decoration:none;}
 
-  .icon_web_section_portal a{display: block; background: transparent url(https://cdn.schoolloop.com/1701251047/img/icon_web_section_portal.png) center left no-repeat; padding: 3px 3px 3px 22px;}
-  .icon_web_section_portal a:hover{background: #f90 url(https://cdn.schoolloop.com/1701251047/img/icon_web_section_portal.png) center left no-repeat; color: #fff; text-decoration: none;}
+  a.icon_dropbox_link {background: transparent url(https://cdn.schoolloop.com/1707171741/img/icon_dropbox_sm.png) center left no-repeat; padding: 5px 5px 5px 25px; text-decoration:none;}
+  a.icon_dropbox_link:hover {color: #f90; background: url(https://cdn.schoolloop.com/1707171741/img/icon_dropbox_sm.png) center left no-repeat; text-decoration:none;}
+
+
+  a.icon_site_sm {text-indent: -9000px; float: left; display: block; background: transparent url(https://cdn.schoolloop.com/1707171741/img/icon_course_site.png) center no-repeat; height: 18px; width: 25px; text-decoration:none;}
+  a.icon_site_sm:hover {background: #f90 url(https://cdn.schoolloop.com/1707171741/img/icon_course_site.png) center no-repeat; text-decoration:none;}
+
+  .icon_download_file {background: url(https://cdn.schoolloop.com/1707171741/img/icon_download_file.png) top right no-repeat;}
+  .icon_download_file:hover {background: url(https://cdn.schoolloop.com/1707171741/img/icon_download_file.png) top right no-repeat;}
+
+  .icon_web_section_portal a{display: block; background: transparent url(https://cdn.schoolloop.com/1707171741/img/icon_web_section_portal.png) center left no-repeat; padding: 3px 3px 3px 22px;}
+  .icon_web_section_portal a:hover{background: #f90 url(https://cdn.schoolloop.com/1707171741/img/icon_web_section_portal.png) center left no-repeat; color: #fff; text-decoration: none;}
 
 a.icon_expand_view {
 display: block;
-background: transparent url(https://cdn.schoolloop.com/1701251047/img/icon_locker_sprite.png) no-repeat -56px -155px;
+background: transparent url(https://cdn.schoolloop.com/1707171741/img/icon_locker_sprite.png) no-repeat -56px -155px;
 height: 28px; width: 28px;
 border-radius: 3px;
 -moz-border-radius: 3px;
@@ -1661,12 +1659,12 @@ border-radius: 3px;
 text-decoration:none;
 cursor: pointer;
 }
-a.icon_expand_view:hover {background: #f90 url(https://cdn.schoolloop.com/1701251047/img/icon_locker_sprite.png) no-repeat -56px -155px; text-decoration:none;}
+a.icon_expand_view:hover {background: #f90 url(https://cdn.schoolloop.com/1707171741/img/icon_locker_sprite.png) no-repeat -56px -155px; text-decoration:none;}
 
 
 a.icon_site_map_open {
 float: left;
-background: transparent url(https://cdn.schoolloop.com/1701251047/img/icon_locker_sprite.png) no-repeat -28px -155px;
+background: transparent url(https://cdn.schoolloop.com/1707171741/img/icon_locker_sprite.png) no-repeat -28px -155px;
 height: 28px; width: 28px;
 border-radius: 3px;
 -moz-border-radius: 3px;
@@ -1677,14 +1675,14 @@ cursor: pointer;
 margin-left: 5px;
 
 }
-a.icon_site_map_open:hover {background: #f90 url(https://cdn.schoolloop.com/1701251047/img/icon_locker_sprite.png) no-repeat -28px -155px; text-decoration:none;}
+a.icon_site_map_open:hover {background: #f90 url(https://cdn.schoolloop.com/1707171741/img/icon_locker_sprite.png) no-repeat -28px -155px; text-decoration:none;}
 
 
 
 a.icon_site_map_collapse {
 display: block;
 float: left;
-background: transparent url(https://cdn.schoolloop.com/1701251047/img/icon_locker_sprite.png) no-repeat 0px -155px;
+background: transparent url(https://cdn.schoolloop.com/1707171741/img/icon_locker_sprite.png) no-repeat 0px -155px;
 height: 28px;
 width: 28px;
 border-radius: 3px;
@@ -1694,7 +1692,7 @@ cursor: pointer;
 text-decoration:none;
 }
 
-a.icon_site_map_collapse:hover {background: #f90 url(https://cdn.schoolloop.com/1701251047/img/icon_locker_sprite.png) no-repeat 0px -155px; text-decoration:none;}
+a.icon_site_map_collapse:hover {background: #f90 url(https://cdn.schoolloop.com/1707171741/img/icon_locker_sprite.png) no-repeat 0px -155px; text-decoration:none;}
 
 
 
@@ -1883,20 +1881,20 @@ text-decoration: none;
 .news h2{font-family: Arial, Helvetica, Geneva, sans-serif; font-weight: bold; font-size: 18px; color: #99b9cc; padding: 0px 0px 0px 0px; margin: 0px 0px 5px 0px; border-bottom: 3px #cccccc solid; text-transform: uppercase;}
 
 .news_attach_link {font-family: Arial, Helvetica, sans-serif; font-size: 12px; color: #666666; margin: 0px 0px 3px 0px; line-height: 16px}
-.news_attach_link .link a{background: url(https://cdn.schoolloop.com/1701251047/img/icon_link.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin: 0px 0px 5px 0px;}
-.news_attach_link .file a{background: url(https://cdn.schoolloop.com/1701251047/img/icon_attach.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin: 0px 0px 5px 0px;}
+.news_attach_link .link a{background: url(https://cdn.schoolloop.com/1707171741/img/icon_link.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin: 0px 0px 5px 0px;}
+.news_attach_link .file a{background: url(https://cdn.schoolloop.com/1707171741/img/icon_attach.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin: 0px 0px 5px 0px;}
 
 .locker_attach_link {margin-bottom: 15px}
 
-.locker_attach_link a.link{background: url(https://cdn.schoolloop.com/1701251047/img/icon_link.gif) top left no-repeat; padding: 0px 0px 0px 20px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin: 0px 0px 5px 0px;}
-.locker_attach_link a.file{background: url(https://cdn.schoolloop.com/1701251047/img/icon_attach.gif) top left no-repeat; padding: 0px 0px 0px 20px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin: 0px 0px 5px 0px;}
-.locker_attach_link a.folder{background: url(https://cdn.schoolloop.com/1701251047/img/icon_folder.gif) top left no-repeat; padding: 0px 0px 0px 20px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin: 0px 0px 5px 0px;}
+.locker_attach_link a.link{background: url(https://cdn.schoolloop.com/1707171741/img/icon_link.gif) top left no-repeat; padding: 0px 0px 0px 20px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin: 0px 0px 5px 0px;}
+.locker_attach_link a.file{background: url(https://cdn.schoolloop.com/1707171741/img/icon_attach.gif) top left no-repeat; padding: 0px 0px 0px 20px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin: 0px 0px 5px 0px;}
+.locker_attach_link a.folder{background: url(https://cdn.schoolloop.com/1707171741/img/icon_folder.gif) top left no-repeat; padding: 0px 0px 0px 20px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; margin: 0px 0px 5px 0px;}
 .locker_attach_link .content{padding: 0px 0px 0px 20px; font-family: Arial, Helvetica, sans-serif; font-size: 11px; margin: 0px 0px 5px 0px;}
 
 
-.full_page .locker_attach_link a.link{background: url(https://cdn.schoolloop.com/1701251047/img/icon_link.gif) top left no-repeat; padding: 0px 0px 0px 20px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; margin: 0px 0px 5px 0px;}
-.full_page .locker_attach_link a.file{background: url(https://cdn.schoolloop.com/1701251047/img/icon_attach.gif) top left no-repeat; padding: 0px 0px 0px 20px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; margin: 0px 0px 5px 0px;}
-.full_page .locker_attach_link a.folder{background: url(https://cdn.schoolloop.com/1701251047/img/icon_folder.gif) top left no-repeat; padding: 0px 0px 0px 20px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; margin: 0px 0px 5px 0px;}
+.full_page .locker_attach_link a.link{background: url(https://cdn.schoolloop.com/1707171741/img/icon_link.gif) top left no-repeat; padding: 0px 0px 0px 20px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; margin: 0px 0px 5px 0px;}
+.full_page .locker_attach_link a.file{background: url(https://cdn.schoolloop.com/1707171741/img/icon_attach.gif) top left no-repeat; padding: 0px 0px 0px 20px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; margin: 0px 0px 5px 0px;}
+.full_page .locker_attach_link a.folder{background: url(https://cdn.schoolloop.com/1707171741/img/icon_folder.gif) top left no-repeat; padding: 0px 0px 0px 20px; font-family: Arial, Helvetica, sans-serif; font-size: 14px; font-weight: bold; margin: 0px 0px 5px 0px;}
 .full_page .locker_attach_link .content{padding: 0px 0px 0px 20px; font-family: Arial, Helvetica, sans-serif; font-size: 11px; margin: 0px 0px 20px 0px;}
 
 
@@ -2024,8 +2022,8 @@ text-decoration: none;
 
 .content01 .attach .title{ font-size: 12px; font-weight: bold; color: #000000; background: transparent; width: auto; padding: 10px 0px 0px 0px; margin: 0px 0px 0px 0px;}
 .content01 .attach .container{width: auto; padding: 0px 0px  3px 0px 3px 0px;}
-.content01 .attach .container .link a{background: url(https://cdn.schoolloop.com/1701251047/img/icon_link.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin:  0px 0px 5px 0px;}
-.content01 .attach .container .file a{background: url(https://cdn.schoolloop.com/1701251047/img/icon_attach.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin: 0px 0px 5px 0px;}
+.content01 .attach .container .link a{background: url(https://cdn.schoolloop.com/1707171741/img/icon_link.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin:  0px 0px 5px 0px;}
+.content01 .attach .container .file a{background: url(https://cdn.schoolloop.com/1707171741/img/icon_attach.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin: 0px 0px 5px 0px;}
 
 .content01 .publish_line {border-bottom: 1px #cccccc solid; font-size:1px; line-height:1px; width: 100%; margin: 3px 0px 3px 0px;}
 .content01 hr {color:#cccccc; background-color:#cccccc; height: 1px; border: 0; width: 100%; margin: 3px 0px 3px 0px;}
@@ -2229,8 +2227,8 @@ margin:0 0 0 -2px;
 
 .content02 .attach .title{ font-size: 12px; font-weight: bold; color: #000000; background: transparent; width: auto; padding: 10px 0px 0px 0px; margin: 0px 0px 0px 0px;}
 .content02 .attach .container{width: auto; padding: 0px 0px  3px 0px 3px 0px;}
-.content02 .attach .container .link a{background: url(https://cdn.schoolloop.com/1701251047/img/icon_link.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin:  0px 0px 5px 0px;}
-.content02 .attach .container .file a{background: url(https://cdn.schoolloop.com/1701251047/img/icon_attach.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin: 0px 0px 5px 0px;}
+.content02 .attach .container .link a{background: url(https://cdn.schoolloop.com/1707171741/img/icon_link.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin:  0px 0px 5px 0px;}
+.content02 .attach .container .file a{background: url(https://cdn.schoolloop.com/1707171741/img/icon_attach.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin: 0px 0px 5px 0px;}
 
 .content02 .publish_line {border-bottom: 1px #cccccc solid; font-size:1px; line-height:1px; width: 100%; margin: 3px 0px 3px 0px;}
 .content02 hr {color:#cccccc; background-color:#cccccc; height: 1px; border: 0; width: 100%; margin: 3px 0px 3px 0px;}
@@ -2357,8 +2355,8 @@ margin:0 0 0 -2px;
 
 .content03 .attach .title{ font-size: 12px; font-weight: bold; color: #000000; background: transparent; width: auto; padding: 10px 0px 0px 0px; margin: 0px 0px 0px 0px;}
 .content03 .attach .container{width: auto; padding: 0px 0px  3px 0px 3px 0px;}
-.content03 .attach .container .link a{background: url(https://cdn.schoolloop.com/1701251047/img/icon_link.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin:  0px 0px 5px 0px;}
-.content03 .attach .container .file a{background: url(https://cdn.schoolloop.com/1701251047/img/icon_attach.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin: 0px 0px 5px 0px;}
+.content03 .attach .container .link a{background: url(https://cdn.schoolloop.com/1707171741/img/icon_link.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin:  0px 0px 5px 0px;}
+.content03 .attach .container .file a{background: url(https://cdn.schoolloop.com/1707171741/img/icon_attach.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin: 0px 0px 5px 0px;}
 
 
 .content03 .publish_line {border-bottom: 1px #cccccc solid; font-size:1px; line-height:1px; width: 100%; margin: 3px 0px 3px 0px;}
@@ -2485,8 +2483,8 @@ margin:0 0 0 -2px;
 
  .content04 .attach .title{ font-size: 12px; font-weight: bold; color: #000000; background: transparent; width: auto; padding: 10px 0px 0px 0px; margin: 0px 0px 0px 0px;}
  .content04 .attach .container{width: auto; padding: 0px 0px  3px 0px 3px 0px;}
- .content04 .attach .container .link a{background: url(https://cdn.schoolloop.com/1701251047/img/icon_link.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin:  0px 0px 5px 0px;}
- .content04 .attach .container .file a{background: url(https://cdn.schoolloop.com/1701251047/img/icon_attach.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin: 0px 0px 5px 0px;}
+ .content04 .attach .container .link a{background: url(https://cdn.schoolloop.com/1707171741/img/icon_link.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin:  0px 0px 5px 0px;}
+ .content04 .attach .container .file a{background: url(https://cdn.schoolloop.com/1707171741/img/icon_attach.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin: 0px 0px 5px 0px;}
 
 
  .content04 .publish_line {border-bottom: 1px #cccccc solid; font-size:1px; line-height:1px; width: 100%; margin: 3px 0px 3px 0px;}
@@ -2561,8 +2559,8 @@ margin:0 0 0 -2px;
 
 .content05 .attach .title{ font-size: 12px; font-weight: bold; color: #000000; background: transparent; width: auto; padding: 10px 0px 0px 0px; margin: 0px 0px 0px 0px;}
 .content05 .attach .container{width: auto; padding: 0px 0px  3px 0px 3px 0px;}
-.content05 .attach .container .link a{background: url(https://cdn.schoolloop.com/1701251047/img/icon_link.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin:  0px 0px 5px 0px;}
-.content05 .attach .container .file a{background: url(https://cdn.schoolloop.com/1701251047/img/icon_attach.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin: 0px 0px 5px 0px;}
+.content05 .attach .container .link a{background: url(https://cdn.schoolloop.com/1707171741/img/icon_link.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin:  0px 0px 5px 0px;}
+.content05 .attach .container .file a{background: url(https://cdn.schoolloop.com/1707171741/img/icon_attach.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin: 0px 0px 5px 0px;}
 
 
  .content05 .publish_line {border-bottom: 1px #cccccc solid; font-size:1px; line-height:1px; width: 100%; margin: 3px 0px 3px 0px;}
@@ -2642,8 +2640,8 @@ margin:0 0 0 -2px;
 
 .content06 .attach .title{ font-size: 12px; font-weight: bold; color: #000000; background: transparent; width: auto; padding: 10px 0px 0px 0px; margin: 0px 0px 0px 0px;}
 .content06 .attach .container{width: auto; padding: 0px 0px  3px 0px 3px 0px;}
-.content06 .attach .container .link a{background: url(https://cdn.schoolloop.com/1701251047/img/icon_link.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin:  0px 0px 5px 0px;}
-.content06 .attach .container .file a{background: url(https://cdn.schoolloop.com/1701251047/img/icon_attach.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin: 0px 0px 5px 0px;}
+.content06 .attach .container .link a{background: url(https://cdn.schoolloop.com/1707171741/img/icon_link.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin:  0px 0px 5px 0px;}
+.content06 .attach .container .file a{background: url(https://cdn.schoolloop.com/1707171741/img/icon_attach.gif) top left no-repeat; font-weight: normal; font-size: 11px; padding: 0px 0px 0px 20px; margin: 0px 0px 5px 0px;}
 
  .content06 .publish_line {border-bottom: 1px #cccccc solid; font-size:1px; line-height:1px; width: 100%; margin: 3px 0px 3px 0px;}
  .content06 hr {color:#cccccc; background-color:#cccccc; height: 1px; border: 0; width: 100%; margin: 3px 0px 3px 0px;}
@@ -2952,9 +2950,9 @@ font-size: 1px;
 
 
 
-.page_bottom_left {width:15px; height: 10px; background: #ffffff url(https://cdn.schoolloop.com/1701251047/img/content_bottom_left.gif) no-repeat left bottom;}
-.page_bottom_center {height: 10px; background: #ffffff url(https://cdn.schoolloop.com/1701251047/img/content_bottom_center.gif) repeat-x bottom;}
-.page_bottom_right {width:15px; height: 10px; background: #ffffff url(https://cdn.schoolloop.com/1701251047/img/content_bottom_right.gif) right bottom no-repeat; }
+.page_bottom_left {width:15px; height: 10px; background: #ffffff url(https://cdn.schoolloop.com/1707171741/img/content_bottom_left.gif) no-repeat left bottom;}
+.page_bottom_center {height: 10px; background: #ffffff url(https://cdn.schoolloop.com/1707171741/img/content_bottom_center.gif) repeat-x bottom;}
+.page_bottom_right {width:15px; height: 10px; background: #ffffff url(https://cdn.schoolloop.com/1707171741/img/content_bottom_right.gif) right bottom no-repeat; }
 
 
 .home_column_top_left {background: #ffffff; vertical-align: middle;}
@@ -3794,7 +3792,7 @@ width: auto;
 .caption_pos_bottom {
     position: absolute;
     bottom: 0px;
-    /* background: url(https://cdn.schoolloop.com/1701251047/img/opacity_60.png); */
+    /* background: url(https://cdn.schoolloop.com/1707171741/img/opacity_60.png); */
 
     background:#000;
     filter: alpha(opacity=8); /* ie lt 7 */
@@ -3951,8 +3949,8 @@ a.icon_block_delete:hover {background: #ffff99 url(/img/cms/icon_delete.gif) no-
 
 </style>
         
-<link href="https://cdn.schoolloop.com/1701251047/static/lib/vex/vex-2.2.1/css/vex.css" rel="stylesheet" type="text/css">
-<link href="https://cdn.schoolloop.com/1701251047/static/lib/vex/vex-2.2.1/css/vex-theme-os.css" rel="stylesheet" type="text/css">
+<link href="https://cdn.schoolloop.com/1707171741/static/lib/vex/vex-2.2.1/css/vex.css" rel="stylesheet" type="text/css">
+<link href="https://cdn.schoolloop.com/1707171741/static/lib/vex/vex-2.2.1/css/vex-theme-os.css" rel="stylesheet" type="text/css">
 
 
 
@@ -3963,38 +3961,39 @@ a.icon_block_delete:hover {background: #ffff99 url(/img/cms/icon_delete.gif) no-
 
 <!-- begin JS Section local_js= -->
 
-<script type="text/javascript" src="https://cdn.schoolloop.com/1701251047/static/lib/jquery/1.8/js/jquery-1.8.2.min.js"></script>
-        <script type="text/javascript" src="https://cdn.schoolloop.com/1701251047/static/lib/jquery/1.8/jquery-ui-1.9.2/ui/minified/jquery-ui.min.js"></script>
-        <script type="text/javascript" src="https://cdn.schoolloop.com/1701251047/static/lib/classy/classy_1.4/classy.js"></script>
-        <script type="text/javascript" src="https://cdn.schoolloop.com/portalcdn/version_1701251047ssl/pf4/javascript/global.js"></script>
+<script type="text/javascript" src="https://cdn.schoolloop.com/1707171741/static/lib/jquery/1.8/js/jquery-1.8.2.min.js"></script>
+        <script type="text/javascript" src="https://cdn.schoolloop.com/1707171741/static/lib/jquery/1.8/jquery-ui-1.9.2/ui/minified/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="https://cdn.schoolloop.com/1707171741/static/lib/classy/classy_1.4/classy.js"></script>
+        <script type="text/javascript" src="https://cdn.schoolloop.com/portalcdn/version_1707171741ssl/pf4/javascript/global.js"></script>
 
-        <script type="text/javascript" src="https://cdn.schoolloop.com/1701251047/static/lib/momentjs/momentjs_2.10.3.min.js"></script>
-        <script src="https://cdn.schoolloop.com/1701251047/static//lib/chartjs/Chart.js"></script>
-        <script src="https://cdn.schoolloop.com/1701251047/static//lib/chartjs/chart_class.js"></script>
+        <script type="text/javascript" src="https://cdn.schoolloop.com/1707171741/static/lib/momentjs/momentjs_2.10.3.min.js"></script>
+        <script src="https://cdn.schoolloop.com/1707171741/static//lib/chartjs/Chart.js"></script>
+        <script src="https://cdn.schoolloop.com/1707171741/static//lib/chartjs/chart_class.js"></script>
 
-        <script type="text/javascript" src="https://cdn.schoolloop.com/1701251047/static/lib/jquery/extra/js/qtip.js"></script>
+        <script type="text/javascript" src="https://cdn.schoolloop.com/1707171741/static/lib/jquery/extra/js/qtip.js"></script>
 
-        <script type="text/javascript" src="https://cdn.schoolloop.com/portalcdn/version_1701251047ssl/javascript/master.js"></script>
-        <script type="text/javascript" src="https://cdn.schoolloop.com/portalcdn/version_1701251047ssl/javascript/master1_8.js"></script>
-        <script type="text/javascript" src="https://cdn.schoolloop.com/portalcdn/version_1701251047ssl/pf4/javascript/legacy.js"></script>
-        <script type="text/javascript" src="https://cdn.schoolloop.com/portalcdn/version_1701251047ssl/pf4/javascript/field_autosave.js"></script>
+        <script type="text/javascript" src="https://cdn.schoolloop.com/portalcdn/version_1707171741ssl/javascript/master.js"></script>
+        <script type="text/javascript" src="https://cdn.schoolloop.com/portalcdn/version_1707171741ssl/javascript/master1_8.js"></script>
+        <script type="text/javascript" src="https://cdn.schoolloop.com/portalcdn/version_1707171741ssl/pf4/javascript/legacy.js"></script>
+        <script type="text/javascript" src="https://cdn.schoolloop.com/portalcdn/version_1707171741ssl/pf4/javascript/field_autosave.js"></script>
 
-        <script type="text/javascript" src="https://cdn.schoolloop.com/1701251047/static/lib/jquery/extra/js/jquery.form.js"></script>
-        <script type="text/javascript" src="https://cdn.schoolloop.com/1701251047/static/lib/jquery_old/jScrollPane.js"></script>
+        <script type="text/javascript" src="https://cdn.schoolloop.com/1707171741/static/lib/jquery/extra/js/jquery.form.js"></script>
+        <script type="text/javascript" src="https://cdn.schoolloop.com/1707171741/static/lib/jquery_old/jScrollPane.js"></script>
 
-        <script type="text/javascript" src="https://cdn.schoolloop.com/1701251047/static/lib/reponsiveslides_sl/responsive_player.js"></script>
+        <script type="text/javascript" src="https://cdn.schoolloop.com/1707171741/static/lib/reponsiveslides_sl/responsive_player.js"></script>
 
-        <script type="text/javascript" src="https://cdn.schoolloop.com/1701251047/static/lib/jquery/extra/js/jquery.ui.touch-punch.js"></script>
+        <script type="text/javascript" src="https://cdn.schoolloop.com/1707171741/static/lib/jquery/extra/js/jquery.ui.touch-punch.js"></script>
 
-        <link rel="stylesheet" type="text/css" media="all" href="https://cdn.schoolloop.com/1701251047/static/lib/jquery_old/jScrollPane.css">
+        <link rel="stylesheet" type="text/css" media="all" href="https://cdn.schoolloop.com/1707171741/static/lib/jquery_old/jScrollPane.css">
 
-        <link href="https://cdn.schoolloop.com/1701251047/static/lib/colorbox/colorbox.css" rel="stylesheet" type="text/css">
-        <script type="text/javascript" src="https://cdn.schoolloop.com/1701251047/static/lib/colorbox/jquery.colorbox-min.js"></script>
+        <link href="https://cdn.schoolloop.com/1707171741/static/lib/colorbox/colorbox.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="https://cdn.schoolloop.com/1707171741/static/lib/colorbox/jquery.colorbox-min.js"></script>
 
-        <link href="https://cdn.schoolloop.com/1701251047/static/lib/jquery/extra/css/qtip.css" rel="stylesheet" type="text/css">
-        <script type="text/javascript" src="https://cdn.schoolloop.com/1701251047/static/lib/jquery/extra/js/qtip.js"></script>
+        <link href="https://cdn.schoolloop.com/1707171741/static/lib/jquery/extra/css/qtip.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="https://cdn.schoolloop.com/1707171741/static/lib/jquery/extra/js/qtip.js"></script>
+        <script type="text/javascript" src="https://cdn.schoolloop.com/1707171741/static/lib/vex/vex-2.2.1/js/vex.combined.min.js"></script>
+        <script type="text/javascript" src="https://cdn.schoolloop.com/1707171741/static/lib/sl/accessible_dropdown.js"></script>
 
-        <script type="text/javascript" src="https://cdn.schoolloop.com/1701251047/static/lib/vex/vex-2.2.1/js/vex.combined.min.js"></script>
 
 
 
@@ -4038,7 +4037,7 @@ a.icon_block_delete:hover {background: #ffff99 url(/img/cms/icon_delete.gif) no-
      <tbody><tr>
        <td>
 <a href="/">
-  <h2><img src="/images/azusa.png" width="150" alt="Azusa High School" /></h2>
+  <h2><img src="/images/azusa.png" width="150" alt="Azusa High School"></h2>
 </a>
 </td>
          </tr>
@@ -4049,41 +4048,51 @@ a.icon_block_delete:hover {background: #ffff99 url(/img/cms/icon_delete.gif) no-
     <tbody><tr>
         <td width="100%">
             <ul>
-            <li><a href="/">Home</a></li>
+                <li>
+                    <a href="/">Home</a>
+                </li>
 
-
-                    <li class="section_1330874820970"><a href="/careerteched" rel="dropmenu1330874820970">Academics</a></li>
-
+                <li class="section_1330874820970">
+                    <a href="/careerteched" rel="dropmenu1330874820970">Academics</a>
+                </li>
                 
-
-                    <li class="section_1330874824744"><a href="/adminoffices" rel="dropmenu1330874824744">Staff</a></li>
-
+                <li class="section_1330874824744">
+                    <a href="/adminoffices" rel="dropmenu1330874824744">Staff</a>
+                </li>
                 
-
-                    <li class="section_1330874821019"><a href="/asbinfo" rel="dropmenu1330874821019">Activities/Athletics</a></li>
-
+                <li class="section_1330874821019">
+                    <a href="/asbinfo" rel="dropmenu1330874821019">Activities/Athletics</a>
+                </li>
                 
-
-                    <li class="section_1330874854689"><a href="/attendance" rel="dropmenu1330874854689">Student Services</a></li>
-
+                <li class="section_1330874854689">
+                    <a href="/attendance" rel="dropmenu1330874854689">Student Services</a>
+                </li>
                 
-
-                    <li class="section_1331966718479"><a href="/parentwelcome" rel="dropmenu1331966718479">Parents</a></li>
-
+                <li class="section_1331966718479">
+                    <a href="/parentwelcome" rel="dropmenu1331966718479">Parents</a>
+                </li>
                 
-
-                    <li class="section_1331966718592"><a href="/communitywelcome" rel="dropmenu1331966718592">Community</a></li>
-
+                <li class="section_1331966718592">
+                    <a href="/communitywelcome" rel="dropmenu1331966718592">Community</a>
+                </li>
                 
-
-                    <li class="section_1456820483968"><a href="/careercenter" rel="dropmenu1456820483968">Guidance</a></li>
-
+                <li class="section_1500709660298">
+                    <a href="/cms/page_view-d=x&amp;piid=&amp;vpid=1488533911143">Athletic Calendar 2017</a>
+                </li>
+                
+                <li class="section_1500709946573">
+                    <a href="/cms/page_view-d=x&amp;piid=&amp;vpid=1503566356353" rel="dropmenu1500709946573">Athletics</a>
+                </li>
+                
+                <li class="section_1456820483968">
+                    <a href="/careercenter" rel="dropmenu1456820483968">Guidance</a>
+                </li>
                 
 
             </ul>
-      </td>
+        </td>
 
-          <td style="vertical-align: middle;">
+        <td style="vertical-align: middle;">
 <form method="POST" action="/search/search" style="margin: 0px 0px 0px 0px; padding: 2px 0px 0px 0px">
 <table cellpadding="1" cellspacing="0" style="width: 139px; float: right">
 <tbody><tr>
@@ -4099,145 +4108,148 @@ a.icon_block_delete:hover {background: #ffff99 url(/img/cms/icon_delete.gif) no-
 </tbody></table>
 
 </form>
-           </td>
+        </td>
     </tr>
-</tbody></table>
+    </tbody></table>
 </div>
 <div class="clear: both"></div>
 
 
-        <div id="dropmenu1330874820970" class="dropmenudiv_a" style="z-index: 5000">
+<div id="dropmenu1330874820970" class="dropmenudiv_a" style="z-index: 5000">
 
-                    <a href="/careerteched">Career Tech Ed Dept.</a>
-            
-                    <a href="/curriculum">Curriculum &amp; Testing</a>
-            
-                    <a href="/IB">International Baccalaureate</a>
-            
-                    <a href="/jrotc">JROTC</a>
-            
-                    <a href="/languagearts">Language Arts Department</a>
-            
-                    <a href="/math">Math Department</a>
-            
-                    <a href="/physicaleducation">Physical Education Department</a>
-            
-                    <a href="/science">Science Department</a>
-            
-                    <a href="/socialscience">Social Science Department</a>
-            
-                    <a href="/specialed">Special Education Dept.</a>
-            
-                    <a href="/worldlanguages">World Languages Department</a>
-            
-                    <a href="/finearts">Visual and Performing Arts</a>
-            
-                    <a href="/cms/section-d=x&amp;group_id=1377671010342">Non-Departmental Courses</a>
-            
-        </div>
+    <a href="/careerteched">Career Tech Ed Dept.</a>
     
-        <div id="dropmenu1330874824744" class="dropmenudiv_a" style="z-index: 5000">
+    <a href="/curriculum">Curriculum &amp; Testing</a>
+    
+    <a href="/IB">International Baccalaureate</a>
+    
+    <a href="/jrotc">JROTC</a>
+    
+    <a href="/languagearts">Language Arts Department</a>
+    
+    <a href="/math">Math Department</a>
+    
+    <a href="/physicaleducation">Physical Education Department</a>
+    
+    <a href="/science">Science Department</a>
+    
+    <a href="/socialscience">Social Science Department</a>
+    
+    <a href="/specialed">Special Education Dept.</a>
+    
+    <a href="/worldlanguages">World Languages Department</a>
+    
+    <a href="/finearts">Visual and Performing Arts</a>
+    
+    <a href="/cms/section-d=x&amp;group_id=1377671010342">Non-Departmental Courses</a>
+    
+</div>
+<div id="dropmenu1330874824744" class="dropmenudiv_a" style="z-index: 5000">
 
-                    <a href="/adminoffices">Directory</a>
-            
-                    <a href="/eventrequest">School Event Request</a>
-            
-        </div>
+    <a href="/adminoffices">Directory</a>
     
-        <div id="dropmenu1330874821019" class="dropmenudiv_a" style="z-index: 5000">
+    <a href="/eventrequest">School Event Request</a>
+    
+</div>
+<div id="dropmenu1330874821019" class="dropmenudiv_a" style="z-index: 5000">
 
-                    <a href="/asbinfo">ASB Information</a>
-            
-                    <a href="/cms/page_view-d=x&amp;piid=&amp;vpid=1451900536688">Athletic Clearances</a>
-            
-                    <a href="/commencement">Commencement Info</a>
-            
-                    <a href="/gradnight">Grad Night Information</a>
-            
-                    <a href="/homecoming">Homecoming Information</a>
-            
-                    <a href="/prom">Prom Information</a>
-            
-                    <a href="/seniorinformation">Senior Information</a>
-            
-                    <a href="/som">Students of the Month</a>
-            
-                    <a href="/yearbook">Yearbook Information</a>
-            
-                    <a href="/singers">Aztec Singers</a>
-            
-                    <a href="/cheerleading">Cheerleading</a>
-            
-                    <a href="/bandpageantry">Band &amp; Pageantry</a>
-            
-                    <a href="/cms/section-d=x&amp;group_id=1332657899888">Fall Sport Information</a>
-            
-                    <a href="/cms/section-d=x&amp;group_id=1332658126130">Winter Sport Information</a>
-            
-                    <a href="/cms/section-d=x&amp;group_id=1332658126158">Spring Sport Information</a>
-            
-                    <a href="/campusstore">CAMPUS STORE</a>
-            
-                    <a href="/cms/section-d=x&amp;group_id=1486198164432">Athletic Calendar 2017</a>
-            
-                    <a href="/cms/page_view-d=x&amp;piid=&amp;vpid=1480073635665">Athletics</a>
-            
-                    <a href="/cms/section-d=x&amp;group_id=1473925918041">Clubs</a>
-            
-        </div>
+    <a href="/asbinfo">ASB Information</a>
     
-        <div id="dropmenu1330874854689" class="dropmenudiv_a" style="z-index: 5000">
+    <a href="/cms/section-d=x&amp;group_id=1486198164432">Athletic Calendar 2017</a>
+    
+    <a href="/cms/page_view-d=x&amp;piid=&amp;vpid=1451900536688">Athletic Clearances</a>
+    
+    <a href="/campusstore">CAMPUS STORE</a>
+    
+    <a href="/commencement">Commencement Info</a>
+    
+    <a href="/gradnight">Grad Night Information</a>
+    
+    <a href="/homecoming">Homecoming Information</a>
+    
+    <a href="/prom">Prom Information</a>
+    
+    <a href="/seniorinformation">Senior Information</a>
+    
+    <a href="/som">Students of the Month</a>
+    
+    <a href="/yearbook">Yearbook Information</a>
+    
+    <a href="/singers">Aztec Singers</a>
+    
+    <a href="/cheerleading">Cheerleading</a>
+    
+    <a href="/bandpageantry">Band &amp; Pageantry</a>
+    
+    <a href="/cms/section-d=x&amp;group_id=1332657899888">Fall Sport Information</a>
+    
+    <a href="/cms/section-d=x&amp;group_id=1332658126130">Winter Sport Information</a>
+    
+    <a href="/cms/section-d=x&amp;group_id=1332658126158">Spring Sport Information</a>
+    
+    <a href="/cms/section-d=x&amp;group_id=1473925918041">Clubs</a>
+    
+    <a href="/cms/section-d=x&amp;group_id=1500709941631">Fall Rosters</a>
+    
+</div>
+<div id="dropmenu1330874854689" class="dropmenudiv_a" style="z-index: 5000">
 
-                    <a href="/attendance">Attendance Office</a>
-            
-                    <a href="/cms/page_view-d=x&amp;piid=&amp;vpid=1332156284860">Library</a>
-            
-                    <a href="/safety">Student Safety</a>
-            
-                    <a href="/healthservices">Health Services</a>
-            
-                    <a href="/nutritionservices">Nutrition Services</a>
-            
-        </div>
+    <a href="/attendance">Attendance Office</a>
     
-        <div id="dropmenu1331966718479" class="dropmenudiv_a" style="z-index: 5000">
+    <a href="/cms/page_view-d=x&amp;piid=&amp;vpid=1332156284860">Library</a>
+    
+    <a href="/safety">Student Safety</a>
+    
+    <a href="/healthservices">Health Services</a>
+    
+    <a href="/nutritionservices">Nutrition Services</a>
+    
+</div>
+<div id="dropmenu1331966718479" class="dropmenudiv_a" style="z-index: 5000">
 
-                    <a href="/parentwelcome">Welcome</a>
-            
-                    <a href="/itac">It Takes A Community (ITAC)</a>
-            
-                    <a href="/elac">ELAC</a>
-            
-                    <a href="/cafeazteca">Cafe Azteca</a>
-            
-        </div>
+    <a href="/parentwelcome">Welcome</a>
     
-        <div id="dropmenu1331966718592" class="dropmenudiv_a" style="z-index: 5000">
+    <a href="/itac">It Takes A Community (ITAC)</a>
+    
+    <a href="/elac">ELAC</a>
+    
+    <a href="/cafeazteca">Cafe Azteca</a>
+    
+</div>
+<div id="dropmenu1331966718592" class="dropmenudiv_a" style="z-index: 5000">
 
-                    <a href="/communitywelcome">Welcome</a>
-            
-                    <a href="/alumni">Alumni Information</a>
-            
-                    <a href="/partnership">Partnership Opportunities</a>
-            
-        </div>
+    <a href="/communitywelcome">Welcome</a>
     
-        <div id="dropmenu1456820483968" class="dropmenudiv_a" style="z-index: 5000">
+    <a href="/alumni">Alumni Information</a>
+    
+    <a href="/partnership">Partnership Opportunities</a>
+    
+</div>
 
-                    <a href="/careercenter">College &amp; Career Center</a>
-            
-                    <a href="/counseling">Guidance and Counseling Office</a>
-            
-        </div>
+<div id="dropmenu1500709946573" class="dropmenudiv_a" style="z-index: 5000">
+
+    <a href="/cms/page_view-d=x&amp;piid=&amp;vpid=1503566356353">Fall Rosters</a>
     
+</div>
+<div id="dropmenu1456820483968" class="dropmenudiv_a" style="z-index: 5000">
+
+    <a href="/careercenter">College &amp; Career Center</a>
+    
+    <a href="/counseling">Guidance and Counseling Office</a>
+    
+</div>
+
 
 <script type="text/javascript">
-//SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
-tabdropdown.init("public_main") ;
-jQuery(document).on("ready",function(){
-    jQuery(".section_1301752510104 a").addClass("current");
-})
-
+    //SYNTAX: tabdropdown.init("menu_id", [integer OR "auto"])
+    //tabdropdown.init("public_main") ;  // the 2007 dropdown code
+    jQuery(document).on("ready", function () {
+        jQuery(".section_1301752510104 a").addClass("current");
+        var options = {
+            oldStyleMenuId: "public_main"
+        }
+        new accessibleDropdown(options);
+    })
 </script>
 <a name="content" id="content"></a>
  <div id="container_content_home">
@@ -4273,6 +4285,21 @@ jQuery(document).on("ready",function(){
     </div>
 
 
+<div class="block_text">
+<p style="text-align: center;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#0000FF;"><span style="font-size:36px;"><strong>Back to School Night</strong></span></span></span></p>
+
+<p style="text-align: center;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#0000FF;"><span style="font-size:36px;"><strong>Wednesday, September 6</strong></span></span></span></p>
+
+<p style="text-align: center;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#0000FF;"><span style="font-size:36px;"><strong>6:00 p.m.</strong></span></span></span></p>
+
+<p style="text-align: center;"><span style="font-size:20px;"><span style="font-family:tahoma,geneva,sans-serif;"><span style="color:#0000FF;"><strong>Food sales begin at 5:00 p.m. Come and support our clubs!</strong></span></span></span></p>      
+
+
+</div>
+<div class="content_spacing"></div>
+
+
+
 
         </div>
 
@@ -4293,60 +4320,55 @@ jQuery(document).on("ready",function(){
 <div class="block_text" style="width: 205px">
 <div style="margin: 0px;">
 <div style="margin: 0px;">
-<p class="publish_content" style="margin: 0px;"><span style="font-family:arial,helvetica,sans-serif;"><span style="font-size:12px;"><a href="http://links.schoolloop.com/link/rd?href=736c5f6c696e6b6666303163633065623266687474703a2f2f7777772e617a7573612e6f72672f706f7274616c2f">Aeries Grades</a></span></span></p>
-<span style="font-size:12px;"><a href="http://links.schoolloop.com/link/rd?href=736c5f6c696e6b6666303163633065623266687474703a2f2f6168732d617573642d63612e7363686f6f6c6c6f6f702e636f6d2f66696c652f313330313735323531303130342f313437313333313233303534342f363332353537333933393938303133343136302e646f63">2016-17 School Calendar</a></span>
+<p class="publish_content" style="margin: 0px;"><a href="http://links.schoolloop.com/link/rd?href=736c5f6c696e6b6666303163633065623266687474703a2f2f6168732d617573642d63612e7363686f6f6c6c6f6f702e636f6d2f66696c652f313330313735323531303130342f313437313333313233303534342f313732343332343836353635353933393932322e706466">Parent/Student Handbook 2017-2018</a></p>
 
-<p class="publish_content" style="margin: 0px;"><span style="font-family:arial,helvetica,sans-serif;"><span style="font-size:12px;"><a href="http://links.schoolloop.com/link/rd?href=736c5f6c696e6b6666303163633065623266687474703a2f2f6168732d617573642d63612e7363686f6f6c6c6f6f702e636f6d2f66696c652f313330313735323531303130342f313437313333313233303534342f373631313033343238353934323739313936322e706466">2016-17 Bell Schedule</a></span></span></p>
+<p class="publish_content" style="margin: 0px;"><a href="http://links.schoolloop.com/link/rd?href=736c5f6c696e6b666630316363306562326668747470733a2f2f6168732d617573642d63612e7363686f6f6c6c6f6f702e636f6d2f636d732f706167655f766965773f643d7826706969643d26767069643d31343838353333393131313433" target="_blank">Athletic Calendar 2017-18</a></p>
 
-<p class="publish_content" style="margin: 0px;"><span style="font-family:arial,helvetica,sans-serif;"><span style="font-size:12px;"><a href="http://links.schoolloop.com/link/rd?href=736c5f6c696e6b666630316363306562326668747470733a2f2f7777772e7375727665796d6f6e6b65792e636f6d2f722f4148533032">Title I Survey Now Open</a></span></span></p>
+<p class="publish_content" style="margin: 0px;"><span style="font-family:arial,helvetica,sans-serif;"><a href="http://links.schoolloop.com/link/rd?href=736c5f6c696e6b6666303163633065623266687474703a2f2f7777772e617a7573612e6f72672f706f7274616c2f">Aeries Grades</a></span></p>
 
-<p class="publish_content" style="margin: 0px;"><span style="font-family:arial,helvetica,sans-serif;"><span style="font-size:12px;"><a href="http://links.schoolloop.com/link/rd?href=736c5f6c696e6b666630316363306562326668747470733a2f2f7777772e7375727665796d6f6e6b65792e636f6d2f722f455343414853">Encuesta de Titulo I esta disponible</a></span></span></p>
+<p><a href="http://links.schoolloop.com/link/rd?href=736c5f6c696e6b6666303163633065623266687474703a2f2f6168732d617573642d63612e7363686f6f6c6c6f6f702e636f6d2f66696c652f313330313735323531303130342f313437313333313233303534342f3433333334363639303336303536363036372e706e67">School Calendar 2017-18</a></p>
 
-<p class="publish_content" style="margin: 0px;"><span style="font-family:arial,helvetica,sans-serif;"><span style="font-size:12px;"><a href="http://links.schoolloop.com/link/rd?href=736c5f6c696e6b6666303163633065623266687474703a2f2f7777772e73686d6f6f702e636f6d" target="_blank">Shmoop Parents</a></span></span></p>
+<p><a href="http://links.schoolloop.com/link/rd?href=736c5f6c696e6b6666303163633065623266687474703a2f2f6168732d617573642d63612e7363686f6f6c6c6f6f702e636f6d2f66696c652f313330313735323531303130342f313437313333313233303534342f393032393937373830353034393035383433352e706466">Bell Schedules 2017-2018</a></p>
 
-<p class="publish_content" style="margin: 0px;"><span style="font-family:arial,helvetica,sans-serif;"><span style="font-size:12px;"><a href="http://links.schoolloop.com/link/rd?href=736c5f6c696e6b6666303163633065623266687474703a2f2f6168732d617573642d63612e7363686f6f6c6c6f6f702e636f6d2f66696c652f313330313735323531303130342f313333323635383536363433382f363133313134373831303330343336373131392e706466">Shmoop Student</a></span></span></p>
+<p class="publish_content" style="margin: 0px;"><span style="font-family:arial,helvetica,sans-serif;"><a href="http://links.schoolloop.com/link/rd?href=736c5f6c696e6b666630316363306562326668747470733a2f2f7777772e7375727665796d6f6e6b65792e636f6d2f722f4148533032">Title I Survey Now Open</a></span></p>
 
-<p class="publish_content" style="margin: 0px;"><span style="font-family:arial,helvetica,sans-serif;"><span style="font-size:12px;"><a href="http://links.schoolloop.com/link/rd?href=736c5f6c696e6b6666303163633065623266687474703a2f2f6168732d617573642d63612e7363686f6f6c6c6f6f702e636f6d2f66696c652f313330313735323531303130342f313333313936373130373031392f373436303234353033393938303734313038382e706466">Vision Statements</a></span></span></p>
+<p class="publish_content" style="margin: 0px;"><span style="font-family:arial,helvetica,sans-serif;"><a href="http://links.schoolloop.com/link/rd?href=736c5f6c696e6b666630316363306562326668747470733a2f2f7777772e7375727665796d6f6e6b65792e636f6d2f722f455343414853">Encuesta de Titulo I esta disponible</a></span></p>
 
-<p class="publish_content" style="color: rgb(51, 51, 51); text-transform: none; white-space: normal;"><span style="font-family:arial,helvetica,sans-serif;"><a href="http://links.schoolloop.com/link/rd?href=736c5f6c696e6b666630316363306562326668747470733a2f2f6168732d617573642d63612e7363686f6f6c6c6f6f702e636f6d2f63617265657263656e7465723f6e6f5f636f6e74726f6c733d74" target="_blank"><span style="font-size: 12px;">College &amp; Career Center</span></a></span></p>
+<p class="publish_content" style="margin: 0px;"><span style="font-family:arial,helvetica,sans-serif;"><a href="http://links.schoolloop.com/link/rd?href=736c5f6c696e6b6666303163633065623266687474703a2f2f7777772e73686d6f6f702e636f6d" target="_blank">Shmoop Parents</a></span></p>
 
-<p class="publish_content" style="color: rgb(51, 51, 51); text-transform: none; white-space: normal;"><span style="font-family:arial,helvetica,sans-serif;"><span style="font-size:12px;"><a href="/cms/page_view-d=x&amp;piid=&amp;vpid=1333620021433">Senior Information</a></span></span></p>
+<p class="publish_content" style="margin: 0px;"><span style="font-family:arial,helvetica,sans-serif;"><a href="http://links.schoolloop.com/link/rd?href=736c5f6c696e6b6666303163633065623266687474703a2f2f6168732d617573642d63612e7363686f6f6c6c6f6f702e636f6d2f66696c652f313330313735323531303130342f313333323635383536363433382f363133313134373831303330343336373131392e706466">Shmoop Student</a></span></p>
+
+<p class="publish_content" style="margin: 0px;"><span style="font-family:arial,helvetica,sans-serif;"><a href="http://links.schoolloop.com/link/rd?href=736c5f6c696e6b6666303163633065623266687474703a2f2f6168732d617573642d63612e7363686f6f6c6c6f6f702e636f6d2f66696c652f313330313735323531303130342f313333313936373130373031392f373436303234353033393938303734313038382e706466">Vision Statements</a></span></p>
+
+<p class="publish_content" style="color: rgb(51, 51, 51); text-transform: none; white-space: normal;"><span style="font-family:arial,helvetica,sans-serif;"><a href="http://links.schoolloop.com/link/rd?href=736c5f6c696e6b666630316363306562326668747470733a2f2f6168732d617573642d63612e7363686f6f6c6c6f6f702e636f6d2f63617265657263656e7465723f6e6f5f636f6e74726f6c733d74" target="_blank">College &amp; Career Center</a></span></p>
+
+<p class="publish_content" style="color: rgb(51, 51, 51); text-transform: none; white-space: normal;"><span style="font-family:arial,helvetica,sans-serif;"><a href="/cms/page_view-d=x&amp;piid=&amp;vpid=1333620021433">Senior Information</a></span></p>
 </div>
 </div>
 
-<p class="publish_content" style="color: rgb(51, 51, 51); text-transform: none; white-space: normal;"><span style="font-family:arial,helvetica,sans-serif;"><span style="font-size:12px;"><a href="/cms/page_view-d=x&amp;piid=&amp;vpid=1334054489143">Yearbook Information</a></span></span></p>
+<p class="publish_content" style="color: rgb(51, 51, 51); text-transform: none; white-space: normal;"><span style="font-family:arial,helvetica,sans-serif;"><a href="/cms/page_view-d=x&amp;piid=&amp;vpid=1334054489143">Yearbook Information</a></span></p>
 
-<p class="publish_content" style="color: rgb(51, 51, 51); text-transform: none; white-space: normal;"><span style="font-family:arial,helvetica,sans-serif;"><span style="font-size:12px;"><a href="http://links.schoolloop.com/link/rd?href=736c5f6c696e6b6666303163633065623266687474703a2f2f736172636f6e6c696e652e6f72672f536172632f57656c636f6d652f3139363432373931393330353238" target="_blank">SARC</a></span></span></p>
+<p class="publish_content" style="color: rgb(51, 51, 51); text-transform: none; white-space: normal;"><span style="font-family:arial,helvetica,sans-serif;"><a href="http://links.schoolloop.com/link/rd?href=736c5f6c696e6b6666303163633065623266687474703a2f2f736172636f6e6c696e652e6f72672f536172632f57656c636f6d652f3139363432373931393330353238" target="_blank">SARC</a></span></p>
 
-<p class="publish_content" style="color: rgb(51, 51, 51); text-transform: none; white-space: normal;"><span style="font-family:arial,helvetica,sans-serif;"><span style="font-size:12px;"><a href="/cms/page_view-d=x&amp;piid=&amp;vpid=1334054490333">Alumni</a></span></span></p>
+<p class="publish_content" style="color: rgb(51, 51, 51); text-transform: none; white-space: normal;"><span style="font-family:arial,helvetica,sans-serif;"><a href="/cms/page_view-d=x&amp;piid=&amp;vpid=1334054490333">Alumni</a></span></p>
 
-<p class="publish_content" style="color: rgb(51, 51, 51); text-transform: none; white-space: normal;"><span style="font-family:arial,helvetica,sans-serif;"><span style="font-size:12px;"><a href="http://links.schoolloop.com/link/rd?href=736c5f6c696e6b6666303163633065623266687474703a2f2f617573642d63612e7363686f6f6c6c6f6f702e636f6d2f">AUSD Website</a></span></span></p>
+<p class="publish_content" style="color: rgb(51, 51, 51); text-transform: none; white-space: normal;"><span style="font-family:arial,helvetica,sans-serif;"><a href="http://links.schoolloop.com/link/rd?href=736c5f6c696e6b6666303163633065623266687474703a2f2f617573642d63612e7363686f6f6c6c6f6f702e636f6d2f">AUSD Website</a></span></p>
 
-<p class="publish_content" style="color: rgb(51, 51, 51); text-transform: none; white-space: normal;"><span style="font-family:arial,helvetica,sans-serif;"><span style="font-size:12px;"><a href="http://links.schoolloop.com/link/rd?href=736c5f6c696e6b6666303163633065623266687474703a2f2f777777362e6364652e63612e676f762f7363686f6f6c7175616c697479736e617073686f742f7371737265706f72742e617370783f69643d30463436323345302d443242332d344237452d423331452d354339323141353846394432">School Quality Snapshot</a></span></span></p>
+<p class="publish_content" style="color: rgb(51, 51, 51); text-transform: none; white-space: normal;"><span style="font-family:arial,helvetica,sans-serif;"><a href="http://links.schoolloop.com/link/rd?href=736c5f6c696e6b6666303163633065623266687474703a2f2f777777362e6364652e63612e676f762f7363686f6f6c7175616c697479736e617073686f742f7371737265706f72742e617370783f69643d30463436323345302d443242332d344237452d423331452d354339323141353846394432">School Quality Snapshot</a></span></p>
 
-<p class="publish_content" style="color: rgb(51, 51, 51); text-transform: none; white-space: normal;"><span style="font-family:arial,helvetica,sans-serif;"><span style="font-size:12px;"><a href="http://links.schoolloop.com/link/rd?href=736c5f6c696e6b6666303163633065623266687474703a2f2f7777772e67616d75746f6e6c696e652e6e65742f64697374726963742f617a7573612f646973706c6179506f6c6963792f3536303730352f696e6465782e68746d6c" target="_blank">Non-Discrimination and Harassment</a></span></span></p>
+<p class="publish_content" style="color: rgb(51, 51, 51); text-transform: none; white-space: normal;"><span style="font-family:arial,helvetica,sans-serif;"><a href="http://links.schoolloop.com/link/rd?href=736c5f6c696e6b6666303163633065623266687474703a2f2f7777772e67616d75746f6e6c696e652e6e65742f64697374726963742f617a7573612f646973706c6179506f6c6963792f3536303730352f696e6465782e68746d6c" target="_blank">Non-Discrimination and Harassment</a></span></p>
 
-<p class="publish_content" style="color: rgb(51, 51, 51); text-transform: none; white-space: normal;"><span style="font-family:arial,helvetica,sans-serif;"><span style="font-size:12px;"><a href="http://links.schoolloop.com/link/rd?href=736c5f6c696e6b6666303163633065623266687474703a2f2f7777772e67616d75746f6e6c696e652e6e65742f64697374726963742f617a7573612f646973706c6179506f6c6963792f3536303730382f696e6465782e68746d6c" target="_blank">Sexual Harassment</a></span></span></p>
+<p class="publish_content" style="color: rgb(51, 51, 51); text-transform: none; white-space: normal;"><span style="font-family:arial,helvetica,sans-serif;"><a href="http://links.schoolloop.com/link/rd?href=736c5f6c696e6b6666303163633065623266687474703a2f2f7777772e67616d75746f6e6c696e652e6e65742f64697374726963742f617a7573612f646973706c6179506f6c6963792f3536303730382f696e6465782e68746d6c" target="_blank">Sexual Harassment</a></span></p>
 
-<p class="publish_content" style="color: rgb(51, 51, 51); text-transform: none; white-space: normal;"><span style="font-family:arial,helvetica,sans-serif;"><span style="font-size:12px;"><a href="http://links.schoolloop.com/link/rd?href=736c5f6c696e6b6666303163633065623266687474703a2f2f7777772e67616d75746f6e6c696e652e6e65742f64697374726963742f617a7573612f646973706c6179506f6c6963792f3439313039392f696e6465782e68746d6c" target="_blank">Uniform Complaint Procedures</a></span></span></p>
+<p class="publish_content" style="color: rgb(51, 51, 51); text-transform: none; white-space: normal;"><span style="font-family:arial,helvetica,sans-serif;"><a href="http://links.schoolloop.com/link/rd?href=736c5f6c696e6b6666303163633065623266687474703a2f2f7777772e67616d75746f6e6c696e652e6e65742f64697374726963742f617a7573612f646973706c6179506f6c6963792f3439313039392f696e6465782e68746d6c" target="_blank">Uniform Complaint Procedures</a></span></p>
 
-<p class="publish_content" style="color: rgb(51, 51, 51); text-transform: none; white-space: normal;"><span style="font-family:arial,helvetica,sans-serif;"><span style="font-size:12px;"><a href="http://links.schoolloop.com/link/rd?href=736c5f6c696e6b6666303163633065623266687474703a2f2f6d6170732e676f6f676c652e636f6d2f6d6170733f663d7126736f757263653d735f7126686c3d656e2667656f636f64653d26713d3234302b4e2b4365727269746f732b4176652c2b417a7573612c2b43412b393137303226736c6c3d33372e303632352c2d39352e363737303638267373706e3d32392e3335383032342c35322e35353835393426736166653d6163746976652669653d555446382668713d26686e6561723d3234302b4e2b4365727269746f732b4176652c2b417a7573612c2b4c6f732b416e67656c65732c2b43616c69666f726e69612b3931373032267a3d3136267375726c3d31">Directions</a></span></span></p>      
+<p class="publish_content" style="color: rgb(51, 51, 51); text-transform: none; white-space: normal;"><span style="font-family:arial,helvetica,sans-serif;"><a href="http://links.schoolloop.com/link/rd?href=736c5f6c696e6b6666303163633065623266687474703a2f2f6d6170732e676f6f676c652e636f6d2f6d6170733f663d7126736f757263653d735f7126686c3d656e2667656f636f64653d26713d3234302b4e2b4365727269746f732b4176652c2b417a7573612c2b43412b393137303226736c6c3d33372e303632352c2d39352e363737303638267373706e3d32392e3335383032342c35322e35353835393426736166653d6163746976652669653d555446382668713d26686e6561723d3234302b4e2b4365727269746f732b4176652c2b417a7573612c2b4c6f732b416e67656c65732c2b43616c69666f726e69612b3931373032267a3d3136267375726c3d31">Directions</a></span></p>      
 
 
 </div>
 <div class="content_spacing"></div>
 
     </div>
-
-
-    <h2>ONCE AN AZTEC,                            ALWAYS AN AZTEC!</h2><div style="width: 205px">
-
- 
-    <img width="205" src="http://ahs-ausd-ca.schoolloop.com/uimg/image/1301752510104/1331967107019/1377669978352.jpg_w205.jpg" alt="Once an Aztec, always an Aztec!">
-
-<div class="content_spacing"></div>
-    </div>
-
 
 
 <h2>Congratulations Karla Rodriguez</h2>
@@ -4366,30 +4388,6 @@ jQuery(document).on("ready",function(){
 <div class="block_text" style="width: 205px">
 <p><img alt="" id="1486199839384" src="http://ahs-ausd-ca.schoolloop.com/uimg/file/1471331230544/6054883995721467856.jpg_wnp1000.jpg?1490280618247" style="width:100%; max-width:100%; border-width: 2px; border-style: solid; margin: 10px 0px;"><br>
 &nbsp;</p>      
-
-
-</div>
-<div class="content_spacing"></div>
-
-
-
-<h2>AHS Band Web Page</h2>
-<div class="block_text" style="width: 205px">
-<p><span style="font-size:20px;">Azusa High's Band has a new web page. Click on the link to access it.</span></p>
-
-<p><span style="font-size:18px;"><a href="http://links.schoolloop.com/link/rd?href=736c5f6c696e6b666630316363306562326668747470733a2f2f617a7573616d757369632e6f72672f" target="_blank">https://azusamusic.org/</a></span></p>      
-
-
-</div>
-<div class="content_spacing"></div>
-
-
-
-<h2>Math Tutoring Available</h2>
-<div class="block_text" style="width: 205px">
-<p style="text-align: center;"><span style="font-family:verdana,geneva,sans-serif;"><span style="font-size:20px;">Math tutoring is available Monday through Thursday from </span></span></p>
-
-<p style="text-align: center;"><span style="font-family:verdana,geneva,sans-serif;"><span style="font-size:20px;">3:00 - 4:00 p.m. in the Library. Take advantage of this opportunity!</span></span></p>      
 
 
 </div>
@@ -4431,7 +4429,7 @@ jQuery(document).on("ready",function(){
         </div>
 
 </div>
-            <img src="https://cdn.schoolloop.com/1701251047/img/spacer.gif" width="200" height="1" alt="">
+            <img src="https://cdn.schoolloop.com/1707171741/img/spacer.gif" width="200" height="1" alt="">
         </td>
         <td class="content02">
 <div>
@@ -4441,9 +4439,62 @@ jQuery(document).on("ready",function(){
 
 
 
-<h2>Rivalry Basketball Games</h2>
+
 <div class="block_text">
-<p><img alt="" id="1486203352017" src="http://ahs-ausd-ca.schoolloop.com/uimg/file/1471331230544/6277393226113287810.png?1494279667451" style="width:100%; max-width:100%; border-width: 5px; border-style: solid; margin: 10px 0px;"><br>
+<a class="twitter-timeline" data-height="600" href="https://twitter.com/Azusaaztecshs">Tweets by Azusaaztecshs</a> <script async="" src="http://ahs-ausd-ca.schoolloop.com//platform.twitter.com/widgets.js" charset="utf-8"></script>   
+</div>
+<div class="content_spacing"></div>
+
+
+
+
+<h2>Azusa High Calendar</h2>
+
+<div class="block_text">
+*Click on Agenda View to see daily events
+<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=calweb.azusahigh%40azusa.org&amp;color=%231B887A&amp;ctz=America%2FLos_Angeles" style="border-width:0" width="450" height="375" frameborder="0" scrolling="no"></iframe>   
+</div>
+<div class="content_spacing"></div>
+
+
+
+
+<h2>Athletic Calendar 2017</h2>
+
+<div class="block_text">
+<iframe align="top" valign="right" width="100%" height="500" marginwidth="0" marginheight="0" hspace="0" vspace="0" frameborder="0" scrolling="yes" src="https://www.home-campus.com/widget-calendar.php?id=MjAxNy0xOCwzMywsLE1vbnRoLG9uLA=="></iframe>   
+</div>
+<div class="content_spacing"></div>
+
+
+
+
+<h2>Academy Launch</h2>
+<div class="block_text">
+<p style="text-align: center;"><img alt="" id="1499586456242" src="http://ahs-ausd-ca.schoolloop.com/uimg/file/1471331230544/7685748524365051788.jpg_wnp1000.jpg?1499829602148" style="width:100%; max-width:100%; border-width: 3px; border-style: solid; margin: 10px 0px;"><br>
+<strong><span style="font-size:20px;">Azusa High School officially launches the </span></strong></p>
+
+<p style="text-align: center;"><strong><span style="font-size:20px;">NAF Academies of Finance and Engineering for the 2017-18 school year!</span></strong></p>      
+
+
+</div>
+<div class="content_spacing"></div>
+
+
+
+    <h2>ONCE AN AZTEC,                            ALWAYS AN AZTEC!</h2>
+
+ 
+    <img width="460" src="http://ahs-ausd-ca.schoolloop.com/uimg/image/1301752510104/1331967107019/1377669978352.jpg_w460.jpg" alt="Once an Aztec, always an Aztec!">
+
+<div class="content_spacing"></div>
+
+
+
+
+<h2>May Student of the Month</h2>
+<div class="block_text">
+<p><img alt="" id="1486204794772" src="http://ahs-ausd-ca.schoolloop.com/uimg/file/1471331230544/2314541498092303597.jpg_wnp1000.jpg?1495815821611" style="width:100%; max-width:100%; border-width: 4px; border-style: solid; margin: 10px 0px;"><br>
 &nbsp;</p>      
 
 
@@ -4452,33 +4503,22 @@ jQuery(document).on("ready",function(){
 
 
 
-<h2>Performing Arts</h2>
-<div class="block_text">
-<p><img alt="" id="1486203351079" src="http://ahs-ausd-ca.schoolloop.com/uimg/file/1471331230544/2894341284713737296.jpg_wnp1000.jpg?1494279227103" style="width:100%; max-width:100%; border-width: 3px; border-style: solid; margin: 10px 0px;"><br>
-&nbsp;</p>      
-
-
-</div>
-<div class="content_spacing"></div>
-
-
-
-<h2>Prom 2017</h2>
+<h2>Sports Awards Ceremony</h2>
 <div class="slideshow_outer">
 
 
 <!-- prev/next links -->
 <div class="slide_nav">
-    <div id="slideshow_1494233796737_prev" class="prev" style="display:none">
+    <div id="slideshow_1495616321940_prev" class="prev" style="display:none">
 
     </div>
-    <div id="slideshow_1494233796737_next" class="next" style="display:none">
+    <div id="slideshow_1495616321940_next" class="next" style="display:none">
 
     </div>
 </div>
 
 
-<div class="slideshow_holder" style="width: 100%" id="slideshow_1494233796737" data-aspect-ratio="1.33333" data-show-config="[&quot;fade&quot;,&quot;false&quot;,&quot;6&quot;,&quot;false&quot;]" data-cycle-pager="#slideshow_1494233796737_dots" data-cycle-pager-template="<div class='pager'>&nbsp;</div>">
+<div class="slideshow_holder" style="width: 100%" id="slideshow_1495616321940" data-aspect-ratio="1.33333" data-show-config="[&quot;fade&quot;,&quot;false&quot;,&quot;5&quot;,&quot;false&quot;]" data-cycle-pager="#slideshow_1495616321940_dots" data-cycle-pager-template="<div class='pager'>&nbsp;</div>">
 <div class="slide " href="">
 
         <div class="caption_pos_bottom caption" style="display:none;">
@@ -4486,8 +4526,8 @@ jQuery(document).on("ready",function(){
 
 
     <img src="https://cdn.schoolloop.com/uimgcdn/aHR0cDovL2Focy1hdXNkLWNhLnNjaG9vbGxvb3AuY29tL3VpbWcvaW1hZ2UvMTMwMTc1MjUxMDEw
-NC8xNDcxMzMxMjMwNTQ0LzE0ODYyMDMzNzUxNzUuanBnP2Nyb3BUb3A9MjAmY3JvcFJpZ2h0PTEw
-MDAmY3JvcEJvdHRvbT03NzAmY3JvcExlZnQ9MCZiYXNpc1dpZHRoPTEwMDA=" class="slides_1494233796737" style="display:none; position:absolute; filter:inherit;opacity:inherit" alt="" data-crop-values="[&quot;1000&quot;,&quot;20&quot;,&quot;1000&quot;,&quot;770&quot;,&quot;0&quot;,&quot;750&quot;]">
+NC8xNDcxMzMxMjMwNTQ0LzE0ODYyMDQ2Nzc3OTcuanBnP2Nyb3BUb3A9MzYmY3JvcFJpZ2h0PTk0
+MCZjcm9wQm90dG9tPTY5NyZjcm9wTGVmdD01OSZiYXNpc1dpZHRoPTEwMDA=" class="slides_1495616321940" style="display:none; position:absolute; filter:inherit;opacity:inherit" alt="" data-crop-values="[&quot;881&quot;,&quot;36&quot;,&quot;940&quot;,&quot;697&quot;,&quot;59&quot;,&quot;661&quot;]">
 
 </div><div class="slide " href="">
 
@@ -4496,8 +4536,8 @@ MDAmY3JvcEJvdHRvbT03NzAmY3JvcExlZnQ9MCZiYXNpc1dpZHRoPTEwMDA=" class="slides_1494
 
 
     <img src="https://cdn.schoolloop.com/uimgcdn/aHR0cDovL2Focy1hdXNkLWNhLnNjaG9vbGxvb3AuY29tL3VpbWcvaW1hZ2UvMTMwMTc1MjUxMDEw
-NC8xNDcxMzMxMjMwNTQ0LzE0ODYyMDMzNzUxNzYuanBnP2Nyb3BUb3A9MzMmY3JvcFJpZ2h0PTkw
-MCZjcm9wQm90dG9tPTYzMyZjcm9wTGVmdD0xMDAmYmFzaXNXaWR0aD0xMDAw" class="slides_1494233796737" style="display:none; position:absolute; filter:inherit;opacity:inherit" alt="" data-crop-values="[&quot;800&quot;,&quot;33&quot;,&quot;900&quot;,&quot;633&quot;,&quot;100&quot;,&quot;600&quot;]">
+NC8xNDcxMzMxMjMwNTQ0LzE0ODYyMDQ2Nzc3OTkuanBnP2Nyb3BUb3A9MzcmY3JvcFJpZ2h0PTk0
+NyZjcm9wQm90dG9tPTcxMyZjcm9wTGVmdD00NSZiYXNpc1dpZHRoPTEwMDA=" class="slides_1495616321940" style="display:none; position:absolute; filter:inherit;opacity:inherit" alt="" data-crop-values="[&quot;902&quot;,&quot;37&quot;,&quot;947&quot;,&quot;713&quot;,&quot;45&quot;,&quot;676&quot;]">
 
 </div><div class="slide " href="">
 
@@ -4506,26 +4546,166 @@ MCZjcm9wQm90dG9tPTYzMyZjcm9wTGVmdD0xMDAmYmFzaXNXaWR0aD0xMDAw" class="slides_1494
 
 
     <img src="https://cdn.schoolloop.com/uimgcdn/aHR0cDovL2Focy1hdXNkLWNhLnNjaG9vbGxvb3AuY29tL3VpbWcvaW1hZ2UvMTMwMTc1MjUxMDEw
-NC8xNDcxMzMxMjMwNTQ0LzE0ODYyMDMzNzUxNzcuanBnP2Nyb3BUb3A9MzMmY3JvcFJpZ2h0PTkw
-MCZjcm9wQm90dG9tPTYzMyZjcm9wTGVmdD0xMDAmYmFzaXNXaWR0aD0xMDAw" class="slides_1494233796737" style="display:none; position:absolute; filter:inherit;opacity:inherit" alt="" data-crop-values="[&quot;800&quot;,&quot;33&quot;,&quot;900&quot;,&quot;633&quot;,&quot;100&quot;,&quot;600&quot;]">
+NC8xNDcxMzMxMjMwNTQ0LzE0ODYyMDQ2Nzc4MDAuanBnP2Nyb3BUb3A9MTAzJmNyb3BSaWdodD05
+NzUmY3JvcEJvdHRvbT04MDUmY3JvcExlZnQ9MzgmYmFzaXNXaWR0aD0xMDAw" class="slides_1495616321940" style="display:none; position:absolute; filter:inherit;opacity:inherit" alt="" data-crop-values="[&quot;937&quot;,&quot;103&quot;,&quot;975&quot;,&quot;805&quot;,&quot;38&quot;,&quot;702&quot;]">
+
+</div><div class="slide " href="">
+
+        <div class="caption_pos_bottom caption" style="display:none;">
+        </div>
+
+
+    <img src="https://cdn.schoolloop.com/uimgcdn/aHR0cDovL2Focy1hdXNkLWNhLnNjaG9vbGxvb3AuY29tL3VpbWcvaW1hZ2UvMTMwMTc1MjUxMDEw
+NC8xNDcxMzMxMjMwNTQ0LzE0ODYyMDQ2Nzc4MDEuanBnP2Nyb3BUb3A9NDYmY3JvcFJpZ2h0PTk0
+OCZjcm9wQm90dG9tPTcyMSZjcm9wTGVmdD00OCZiYXNpc1dpZHRoPTEwMDA=" class="slides_1495616321940" style="display:none; position:absolute; filter:inherit;opacity:inherit" alt="" data-crop-values="[&quot;900&quot;,&quot;46&quot;,&quot;948&quot;,&quot;721&quot;,&quot;48&quot;,&quot;675&quot;]">
+
+</div><div class="slide " href="">
+
+        <div class="caption_pos_bottom caption" style="display:none;">
+        </div>
+
+
+    <img src="https://cdn.schoolloop.com/uimgcdn/aHR0cDovL2Focy1hdXNkLWNhLnNjaG9vbGxvb3AuY29tL3VpbWcvaW1hZ2UvMTMwMTc1MjUxMDEw
+NC8xNDcxMzMxMjMwNTQ0LzE0ODYyMDQ2Nzc4MDIuanBnP2Nyb3BUb3A9MTM4JmNyb3BSaWdodD05
+NTAmY3JvcEJvdHRvbT04MTMmY3JvcExlZnQ9NDkmYmFzaXNXaWR0aD0xMDAw" class="slides_1495616321940" style="display:none; position:absolute; filter:inherit;opacity:inherit" alt="" data-crop-values="[&quot;901&quot;,&quot;138&quot;,&quot;950&quot;,&quot;813&quot;,&quot;49&quot;,&quot;675&quot;]">
+
+</div><div class="slide " href="">
+
+        <div class="caption_pos_bottom caption" style="display:none;">
+        </div>
+
+
+    <img src="https://cdn.schoolloop.com/uimgcdn/aHR0cDovL2Focy1hdXNkLWNhLnNjaG9vbGxvb3AuY29tL3VpbWcvaW1hZ2UvMTMwMTc1MjUxMDEw
+NC8xNDcxMzMxMjMwNTQ0LzE0ODYyMDQ2Nzc4MDMuanBnP2Nyb3BUb3A9NzQmY3JvcFJpZ2h0PTk1
+NSZjcm9wQm90dG9tPTc1MCZjcm9wTGVmdD01MyZiYXNpc1dpZHRoPTEwMDA=" class="slides_1495616321940" style="display:none; position:absolute; filter:inherit;opacity:inherit" alt="" data-crop-values="[&quot;902&quot;,&quot;74&quot;,&quot;955&quot;,&quot;750&quot;,&quot;53&quot;,&quot;676&quot;]">
+
+</div><div class="slide " href="">
+
+        <div class="caption_pos_bottom caption" style="display:none;">
+        </div>
+
+
+    <img src="https://cdn.schoolloop.com/uimgcdn/aHR0cDovL2Focy1hdXNkLWNhLnNjaG9vbGxvb3AuY29tL3VpbWcvaW1hZ2UvMTMwMTc1MjUxMDEw
+NC8xNDcxMzMxMjMwNTQ0LzE0ODYyMDQ2Nzc4MDQuanBnP2Nyb3BUb3A9MzAmY3JvcFJpZ2h0PTg1
+OSZjcm9wQm90dG9tPTU2OSZjcm9wTGVmdD0xNDAmYmFzaXNXaWR0aD0xMDAw" class="slides_1495616321940" style="display:none; position:absolute; filter:inherit;opacity:inherit" alt="" data-crop-values="[&quot;719&quot;,&quot;30&quot;,&quot;859&quot;,&quot;569&quot;,&quot;140&quot;,&quot;539&quot;]">
+
+</div><div class="slide " href="">
+
+        <div class="caption_pos_bottom caption" style="display:none;">
+        </div>
+
+
+    <img src="https://cdn.schoolloop.com/uimgcdn/aHR0cDovL2Focy1hdXNkLWNhLnNjaG9vbGxvb3AuY29tL3VpbWcvaW1hZ2UvMTMwMTc1MjUxMDEw
+NC8xNDcxMzMxMjMwNTQ0LzE0ODYyMDQ2Nzc4MDUuanBnP2Nyb3BUb3A9NSZjcm9wUmlnaHQ9Njg0
+JmNyb3BCb3R0b209NDk3JmNyb3BMZWZ0PTI4JmJhc2lzV2lkdGg9MTAwMA==" class="slides_1495616321940" style="display:none; position:absolute; filter:inherit;opacity:inherit" alt="" data-crop-values="[&quot;656&quot;,&quot;5&quot;,&quot;684&quot;,&quot;497&quot;,&quot;28&quot;,&quot;492&quot;]">
+
+</div><div class="slide " href="">
+
+        <div class="caption_pos_bottom caption" style="display:none;">
+        </div>
+
+
+    <img src="https://cdn.schoolloop.com/uimgcdn/aHR0cDovL2Focy1hdXNkLWNhLnNjaG9vbGxvb3AuY29tL3VpbWcvaW1hZ2UvMTMwMTc1MjUxMDEw
+NC8xNDcxMzMxMjMwNTQ0LzE0ODYyMDQ2Nzc4MDYuanBnP2Nyb3BUb3A9ODEmY3JvcFJpZ2h0PTk1
+MCZjcm9wQm90dG9tPTc1NiZjcm9wTGVmdD00OSZiYXNpc1dpZHRoPTEwMDA=" class="slides_1495616321940" style="display:none; position:absolute; filter:inherit;opacity:inherit" alt="" data-crop-values="[&quot;901&quot;,&quot;81&quot;,&quot;950&quot;,&quot;756&quot;,&quot;49&quot;,&quot;675&quot;]">
+
+</div><div class="slide pointered" href="">
+
+        <div class="caption_pos_bottom caption" style="display:none;">
+        </div>
+
+
+    <img src="https://cdn.schoolloop.com/uimgcdn/aHR0cDovL2Focy1hdXNkLWNhLnNjaG9vbGxvb3AuY29tL3VpbWcvaW1hZ2UvMTMwMTc1MjUxMDEw
+NC8xNDcxMzMxMjMwNTQ0LzE0ODYyMDQ2Nzc5MTAuanBnP2Nyb3BUb3A9MzYmY3JvcFJpZ2h0PTk0
+MCZjcm9wQm90dG9tPTY5NyZjcm9wTGVmdD01OSZiYXNpc1dpZHRoPTEwMDA=" class="slides_1495616321940" style="display:none; position:absolute; filter:inherit;opacity:inherit" alt="" data-crop-values="[&quot;881&quot;,&quot;36&quot;,&quot;940&quot;,&quot;697&quot;,&quot;59&quot;,&quot;661&quot;]">
+
+</div><div class="slide pointered" href="">
+
+        <div class="caption_pos_bottom caption" style="display:none;">
+        </div>
+
+
+    <img src="https://cdn.schoolloop.com/uimgcdn/aHR0cDovL2Focy1hdXNkLWNhLnNjaG9vbGxvb3AuY29tL3VpbWcvaW1hZ2UvMTMwMTc1MjUxMDEw
+NC8xNDcxMzMxMjMwNTQ0LzE0ODYyMDQ2Nzc5MTEuanBnP2Nyb3BUb3A9MTgmY3JvcFJpZ2h0PTcy
+MSZjcm9wQm90dG9tPTM1MCZjcm9wTGVmdD0yNzgmYmFzaXNXaWR0aD0xMDAw" class="slides_1495616321940" style="display:none; position:absolute; filter:inherit;opacity:inherit" alt="" data-crop-values="[&quot;443&quot;,&quot;18&quot;,&quot;721&quot;,&quot;350&quot;,&quot;278&quot;,&quot;332&quot;]">
+
+</div><div class="slide pointered" href="">
+
+        <div class="caption_pos_bottom caption" style="display:none;">
+        </div>
+
+
+    <img src="https://cdn.schoolloop.com/uimgcdn/aHR0cDovL2Focy1hdXNkLWNhLnNjaG9vbGxvb3AuY29tL3VpbWcvaW1hZ2UvMTMwMTc1MjUxMDEw
+NC8xNDcxMzMxMjMwNTQ0LzE0ODYyMDQ2Nzc5MTIuanBnP2Nyb3BUb3A9MjgmY3JvcFJpZ2h0PTg0
+OSZjcm9wQm90dG9tPTU1MiZjcm9wTGVmdD0xNTAmYmFzaXNXaWR0aD0xMDAw" class="slides_1495616321940" style="display:none; position:absolute; filter:inherit;opacity:inherit" alt="" data-crop-values="[&quot;699&quot;,&quot;28&quot;,&quot;849&quot;,&quot;552&quot;,&quot;150&quot;,&quot;524&quot;]">
+
+</div><div class="slide pointered" href="">
+
+        <div class="caption_pos_bottom caption" style="display:none;">
+        </div>
+
+
+    <img src="https://cdn.schoolloop.com/uimgcdn/aHR0cDovL2Focy1hdXNkLWNhLnNjaG9vbGxvb3AuY29tL3VpbWcvaW1hZ2UvMTMwMTc1MjUxMDEw
+NC8xNDcxMzMxMjMwNTQ0LzE0ODYyMDQ2Nzc5MTMuanBnP2Nyb3BUb3A9MjQmY3JvcFJpZ2h0PTc5
+MiZjcm9wQm90dG9tPTQ2MiZjcm9wTGVmdD0yMDcmYmFzaXNXaWR0aD0xMDAw" class="slides_1495616321940" style="display:none; position:absolute; filter:inherit;opacity:inherit" alt="" data-crop-values="[&quot;585&quot;,&quot;24&quot;,&quot;792&quot;,&quot;462&quot;,&quot;207&quot;,&quot;438&quot;]">
+
+</div><div class="slide pointered" href="">
+
+        <div class="caption_pos_bottom caption" style="display:none;">
+        </div>
+
+
+    <img src="https://cdn.schoolloop.com/uimgcdn/aHR0cDovL2Focy1hdXNkLWNhLnNjaG9vbGxvb3AuY29tL3VpbWcvaW1hZ2UvMTMwMTc1MjUxMDEw
+NC8xNDcxMzMxMjMwNTQ0LzE0ODYyMDQ2Nzc5MTQuanBnP2Nyb3BUb3A9MzUmY3JvcFJpZ2h0PTky
+NCZjcm9wQm90dG9tPTY3MSZjcm9wTGVmdD03NiZiYXNpc1dpZHRoPTEwMDA=" class="slides_1495616321940" style="display:none; position:absolute; filter:inherit;opacity:inherit" alt="" data-crop-values="[&quot;848&quot;,&quot;35&quot;,&quot;924&quot;,&quot;671&quot;,&quot;76&quot;,&quot;636&quot;]">
+
+</div><div class="slide " href="">
+
+        <div class="caption_pos_bottom caption" style="display:none;">
+        </div>
+
+
+    <img src="https://cdn.schoolloop.com/uimgcdn/aHR0cDovL2Focy1hdXNkLWNhLnNjaG9vbGxvb3AuY29tL3VpbWcvaW1hZ2UvMTMwMTc1MjUxMDEw
+NC8xNDcxMzMxMjMwNTQ0LzE0ODYyMDQ2Nzc5MTUuanBnP2Nyb3BUb3A9OTYmY3JvcFJpZ2h0PTk2
+NSZjcm9wQm90dG9tPTc3NCZjcm9wTGVmdD02MSZiYXNpc1dpZHRoPTEwMDA=" class="slides_1495616321940" style="display:none; position:absolute; filter:inherit;opacity:inherit" alt="" data-crop-values="[&quot;904&quot;,&quot;96&quot;,&quot;965&quot;,&quot;774&quot;,&quot;61&quot;,&quot;678&quot;]">
+
+</div><div class="slide " href="">
+
+        <div class="caption_pos_bottom caption" style="display:none;">
+        </div>
+
+
+    <img src="https://cdn.schoolloop.com/uimgcdn/aHR0cDovL2Focy1hdXNkLWNhLnNjaG9vbGxvb3AuY29tL3VpbWcvaW1hZ2UvMTMwMTc1MjUxMDEw
+NC8xNDcxMzMxMjMwNTQ0LzE0ODYyMDQ2Nzc5MTYuanBnP2Nyb3BUb3A9MTAxJmNyb3BSaWdodD05
+NjImY3JvcEJvdHRvbT03NzkmY3JvcExlZnQ9NTgmYmFzaXNXaWR0aD0xMDAw" class="slides_1495616321940" style="display:none; position:absolute; filter:inherit;opacity:inherit" alt="" data-crop-values="[&quot;904&quot;,&quot;101&quot;,&quot;962&quot;,&quot;779&quot;,&quot;58&quot;,&quot;678&quot;]">
+
+</div><div class="slide pointered" href="">
+
+        <div class="caption_pos_bottom caption" style="display:none;">
+        </div>
+
+
+    <img src="https://cdn.schoolloop.com/uimgcdn/aHR0cDovL2Focy1hdXNkLWNhLnNjaG9vbGxvb3AuY29tL3VpbWcvaW1hZ2UvMTMwMTc1MjUxMDEw
+NC8xNDcxMzMxMjMwNTQ0LzE0ODYyMDQ2Nzc5MTguanBnP2Nyb3BUb3A9MzkmY3JvcFJpZ2h0PTk3
+MSZjcm9wQm90dG9tPTc0NiZjcm9wTGVmdD0yOCZiYXNpc1dpZHRoPTEwMDA=" class="slides_1495616321940" style="display:none; position:absolute; filter:inherit;opacity:inherit" alt="" data-crop-values="[&quot;943&quot;,&quot;39&quot;,&quot;971&quot;,&quot;746&quot;,&quot;28&quot;,&quot;707&quot;]">
 
 </div></div>
 
 </div>
 
-<div id="slideshow_1494233796737_dots" class="dots center"></div>
+<div id="slideshow_1495616321940_dots" class="dots center"></div>
 <div style="clear: both;"></div>
 <div class="content_spacing"></div>
 
 <script>
 if(window.loaded ){
-     jQuery("#slideshow_1494233796737").slides_responsive();
+     jQuery("#slideshow_1495616321940").slides_responsive();
  }
 
 jQuery(window).load(function() {
-    jQuery("#slideshow_1494233796737 .slide, .caption:not(.caption_pos_none)").show();
+    jQuery("#slideshow_1495616321940 .slide, .caption:not(.caption_pos_none)").show();
 
-    jQuery("#slideshow_1494233796737").slides_responsive();
+    jQuery("#slideshow_1495616321940").slides_responsive();
      window.loaded = true;
 });
 
@@ -4538,7 +4718,18 @@ jQuery(window).load(function() {
 
 
 
-<h2>Montview League Outstadning Seniors</h2>
+<h2>College Signing Day</h2>
+<div class="block_text">
+<p><img alt="" id="1486204345097" src="http://ahs-ausd-ca.schoolloop.com/uimg/file/1471331230544/359198978613249547.jpg_wnp1000.jpg?1495287764272" style="width:100%; max-width:100%; border-width: 3px; border-style: solid; margin: 10px 0px;"><br>
+Congratulations to our Aztecs on signing their letters of intent!</p>      
+
+
+</div>
+<div class="content_spacing"></div>
+
+
+
+<h2>Montview League Outstanding Seniors</h2>
 <div class="block_text">
 <p><img alt="" id="1486203114731" src="http://ahs-ausd-ca.schoolloop.com/uimg/file/1471331230544/5781343667321126510.jpg_wnp1000.jpg?1493952058723" style="width:100%; max-width:100%; border-width: 5px; border-style: solid; margin: 10px 0px;"><br>
 &nbsp;</p>      
@@ -4546,28 +4737,6 @@ jQuery(window).load(function() {
 
 </div>
 <div class="content_spacing"></div>
-
-
-
-<h2>April Student of the Month</h2>
-<div class="block_text">
-<p><img alt="" id="1486202611136" src="http://ahs-ausd-ca.schoolloop.com/uimg/file/1471331230544/67100775496935584.jpg_wnp1000.jpg?1493404870092" style="width:100%; max-width:100%; border-width: 3px; border-style: solid; margin: 10px 0px;"><br>
-&nbsp;</p>      
-
-
-</div>
-<div class="content_spacing"></div>
-
-
-
-<h2>Azusa High Calendar</h2>
-
-<div class="block_text">
-*Click on Agenda View to see daily events
-<iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=calweb.azusahigh%40azusa.org&amp;color=%231B887A&amp;ctz=America%2FLos_Angeles" style="border-width:0" width="450" height="375" frameborder="0" scrolling="no"></iframe>   
-</div>
-<div class="content_spacing"></div>
-
 
 
 
@@ -4611,43 +4780,6 @@ jQuery(window).load(function() {
     </div>
 
 
-<h2>Grad Panel 2016-17</h2>
-<div class="block_text">
-<p><img alt="" id="1483158211694" src="http://ahs-ausd-ca.schoolloop.com/uimg/file/1471331230544/5938344077297689972.jpg_wnp1000.jpg?1483996729843" style="width:100%; max-width:100%; border-width: 2px; border-style: solid; margin: 10px 0px;"><br>
-&nbsp;</p>      
-
-
-</div>
-<div class="content_spacing"></div>
-
-
-
-<h2>International Students</h2>
-<div class="block_text">
-<p>On March 16, nineteen&nbsp;International Students from Japan&nbsp;visited Azusa High School. They were able to experience how the American educational system in implemented. It was a great day for them to learn about our culture and it was even more exciting learning about their culture and educational system!&nbsp;</p>
-
-<p class=" is-empty">&nbsp;</p>
-
-<p><img alt="" id="1486199914851" src="http://ahs-ausd-ca.schoolloop.com/uimg/file/1471331230544/3408726749472337394.jpg_wnp1000.jpg?1490325393935" style="width:100%; max-width:100%; border-width: 2px; border-style: solid; margin: 10px 0px;"><br>
-&nbsp;</p>      
-
-
-</div>
-<div class="content_spacing"></div>
-
-
-
-<h2>UCLA Visitation</h2>
-<div class="block_text">
-<p><img alt="UCLA Meeting.png" id="1473926161001" src="http://ahs-ausd-ca.schoolloop.com/uimg/file/1471331230544/208977712889249744.png?1476391295708" style="width:100%; max-width:100%; border-width: 0px; margin: 10px 0px;" title="UCLA Meeting.png"><br>
-&nbsp;</p>      
-
-
-</div>
-<div class="content_spacing"></div>
-
-
-
 
         </div>
 
@@ -4664,127 +4796,57 @@ jQuery(window).load(function() {
 
 <h2>Important Dates</h2>
 <div class="block_text" style="width: 220px">
-<p><u><strong><span style="font-size:12px;">May</span></strong></u></p>
+<p class=" is-empty">&nbsp;</p>
 
-<p><span style="font-size:12px;">1-12: AP Testing</span></p>
+<p><span style="font-size:14px;"><span style="font-family:arial,helvetica,sans-serif;"><u><strong>August</strong></u></span></span></p>
 
-<p><span style="font-size:12px;">12 - AHS&nbsp;vs GHS Staff Basketball&nbsp;</span><span style="font-size: 12px;">Game</span></p>
+<p><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">7 - Senior Registration</span></span></p>
 
-<p><span style="font-size: 12px;">12 - Azusa PD vs Azusa Fire Basketball Game</span></p>
+<p><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">8 - Junior Registration</span></span></p>
 
-<p><span style="font-size: 12px;">18 - Choir Concert</span></p>
+<p><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">9 - Sophomore Registration</span></span></p>
 
-<p><span style="font-size:12px;">19 - Rally</span></p>
+<p><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">10 - Freshman Registration</span></span></p>
 
-<p><span style="font-size:12px;">20 - Fashion Show</span></p>
+<p><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">17 - First Day of School</span></span></p>
 
-<p><span style="font-size:12px;">24 - Sr. Sports Awards</span></p>
+<p><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">19 - Band Booster Car Wash</span></span></p>
 
-<p><span style="font-size:12px;">26 - Student of the Month</span></p>
+<p><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">23 - College Shirt Day</span></span></p>
 
-<p><span style="font-size:12px;">29 - No school - Memorial Day</span></p>
+<p><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">26 - Football Car Wash</span></span></p>
 
-<p><span style="font-size:12px;">30 - Senior Finals Begin</span></p>
+<p><font><span style="font-size: 12px;">30 - College Shirt day</span></font></p>
+
+<p><font><span style="font-size: 12px;">31 - Fall Pep Rally</span></font></p>
 
 <p class=" is-empty">&nbsp;</p>
 
-<p><u><strong><span style="font-size:12px;">June</span></strong></u></p>
+<p><span style="font-size:14px;"><span style="font-family:arial,helvetica,sans-serif;"><u><strong>September</strong></u></span></span></p>
 
-<p><span style="font-size:12px;">1 - Yearbook Distribution</span></p>
+<p><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">1 - 1st Football Game @ Citrus</span></span></p>
 
-<p><span style="font-size:12px;">2 - Cap &amp; Gown Distribution</span></p>
+<p><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">4 - No School, Labor Day</span></span></p>
 
-<p><span style="font-size:12px;">5 - Senior BBQ</span></p>
+<p><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">6 - Back to School Night</span></span></p>
 
-<p><span style="font-size:12px;">6 - Senior Check-out</span></p>
+<p><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">6 - College Shirt Day</span></span></p>
 
-<p><span style="font-size:12px;">6 - Senior Awards Assembly</span></p>
+<p><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">13 - College Shirt Day</span></span></p>
 
-<p><span style="font-size:12px;">7 - Graduation @ APU</span></p>
+<p><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">20 - College Shirt Day</span></span></p>
 
-<p><span style="font-size: 12px;">8 - Last Day of School</span></p>
-
-<p><span style="font-size: 12px;">8 - Grad Nite</span></p>
-
-<p><span style="font-size: 12px;">12 - Diploma Distribution</span></p>
+<p><span style="font-size:12px;"><span style="font-family:arial,helvetica,sans-serif;">27 - College Shirt Day</span></span></p>
 
 <p class=" is-empty">&nbsp;</p>
 
-<p><u><strong><span style="font-size: 12px;">August</span></strong></u></p>
-
-<p><span style="font-size: 12px;">17 - First Day of School</span></p>
-
-<p class=" is-empty">&nbsp;</p>
-
-<p class=" is-empty">&nbsp;</p>
-
-<p><span style="font-size:12px;">*click on calendar on the left for more details</span></p>
-
-<p class=" is-empty">&nbsp;</p>      
+<p><span style="font-size:12px;">*click on calendar on the left for more details</span></p>      
 
 
 </div>
 <div class="content_spacing"></div>
 
     </div>
-
-
-<h2>Advanced Placement (AP) Test Schedule</h2>
-<div class="block_text" style="width: 220px">
-<p style="text-align: center;"><span style="font-size:20px;"><strong><u>May 1 - May 12</u></strong></span></p>
-
-<p><span style="font-size:14px;">May 1 - Psychology</span></p>
-
-<p><span style="font-size:14px;">May 2 - Spanish Language</span></p>
-
-<p><span style="font-size:14px;">May 3 - English Literature</span></p>
-
-<p><span style="font-size:14px;">May 4 - U.S. Government</span></p>
-
-<p><span style="font-size:14px;">May 5 - U.S. History &amp; Studio Art</span></p>
-
-<p><span style="font-size:14px;">May 8 - Biology &amp; Physics</span></p>
-
-<p><span style="font-size:14px;">May 9 - Calculus AB/BC, French Language, Spanish Literature</span></p>
-
-<p><span style="font-size:14px;">May 10 - English Language</span></p>
-
-<p><span style="font-size:14px;">May 11 - World History &amp; Statistics</span></p>
-
-<p><span style="font-size:14px;">May 12 - Human Geography&nbsp;</span></p>
-
-<p class=" is-empty">&nbsp;</p>      
-
-
-</div>
-<div class="content_spacing"></div>
-
-
-
-<h2>IB Examination Schedule</h2>
-<div class="block_text" style="width: 220px">
-<p class=" is-empty">&nbsp;</p>
-
-<p><span style="font-size:14px;">May 2: Economics SL paper 1</span></p>
-
-<p><span style="font-size:14px;">May&nbsp;3: Economics SL paper 2</span></p>
-
-<p><span style="font-size:14px;">May 15: Physics SL paper 1 &amp; 2</span></p>
-
-<p><span style="font-size:14px;">May 16: Physics Sl paper 3</span></p>
-
-<p><span style="font-size:14px;">May 16: Spanish B SL paper 1</span></p>
-
-<p><span style="font-size:14px;">May 17: Spanish B SL paper 2</span></p>
-
-<p><span style="font-size:14px;">May 18: French B SL paper 1</span></p>
-
-<p><span style="font-size:14px;">May 19: French B SL paper 2</span></p>      
-
-
-</div>
-<div class="content_spacing"></div>
-
 
     <div class="container02_middle">
 
@@ -4801,12 +4863,12 @@ jQuery(window).load(function() {
 <table border="0" cellpadding="1" cellspacing="1" style="width: 100%;">
     <tbody>
         <tr>
-            <td><span style="font-family:georgia,serif;">Attendance Office</span></td>
-            <td><span style="font-family:georgia,serif;"><strong><span style="font-size: 11px;">3491</span></strong></span></td>
-        </tr>
-        <tr>
             <td><span style="font-family:georgia,serif;">Main Office</span></td>
             <td><span style="font-family:georgia,serif;"><strong><span style="font-size: 11px;">3400</span></strong></span></td>
+        </tr>
+        <tr>
+            <td><span style="font-family:georgia,serif;">Attendance Office</span></td>
+            <td><span style="font-family:georgia,serif;"><strong><span style="font-size: 11px;">3491</span></strong></span></td>
         </tr>
         <tr>
             <td><span style="font-family:georgia,serif;">Guidance Office</span></td>
@@ -4826,6 +4888,28 @@ jQuery(window).load(function() {
         </tr>
     </tbody>
 </table>      
+
+
+</div>
+<div class="content_spacing"></div>
+
+    </div>
+
+    <div class="container04_middle">
+
+<h2>Fundraisers</h2>
+<div class="block_text" style="width: 220px">
+<p>September&nbsp;</p>
+
+<p>1: Cross Country Car Wash</p>
+
+<p>11-15: Band Boosters - Krispy Kreme</p>
+
+<p>18-22: Choir/Music - Little Caesars Kit</p>
+
+<p>23: JROTC Booster War Wash</p>
+
+<p class=" is-empty">&nbsp;</p>      
 
 
 </div>
@@ -4882,18 +4966,6 @@ jQuery(window).load(function() {
 
     </div>
 
-    <div class="container04_middle">
-
-<h2>ASB Cards</h2>
-<div class="block_text" style="width: 220px">
-<p>For more information <a href="/cms/page_view-d=x&amp;piid=&amp;vpid=1332156224042">Click here</a></p>      
-
-
-</div>
-<div class="content_spacing"></div>
-
-    </div>
-
 
 <h2>Click below to create a meal account:</h2>
 <div class="block_text" style="width: 220px">
@@ -4909,7 +4981,7 @@ jQuery(window).load(function() {
         </div>
 
 </div>
-           <img src="https://cdn.schoolloop.com/1701251047/img/spacer.gif" width="220" height="1" alt="">
+           <img src="https://cdn.schoolloop.com/1707171741/img/spacer.gif" width="220" height="1" alt="">
          </td>
     </tr>
  </tbody></table>
@@ -4917,7 +4989,7 @@ jQuery(window).load(function() {
 
 <div style="clear: both"></div>
 
-        <img src="https://cdn.schoolloop.com/1701251047/img/spacer.gif" width="1" height="1" alt="">
+        <img src="https://cdn.schoolloop.com/1707171741/img/spacer.gif" width="1" height="1" alt="">
     </div>
 
     <div id="container_full_footer">
@@ -4927,7 +4999,7 @@ jQuery(window).load(function() {
        <tbody><tr>
         <td class="bottom" colspan="2">
        <div style="float: left; padding: 3px 5px 0px 0px">
-           <img src="https://cdn.schoolloop.com/1701251047/img/logo_footer_sl.gif" alt="School Loop Footer Logo">
+           <img src="https://cdn.schoolloop.com/1707171741/img/logo_footer_sl.gif" alt="School Loop Footer Logo">
        </div>
 
 
@@ -5006,7 +5078,7 @@ Powered by <a href="http://www.schoolloop.com" target="_blank" class="footer">Sc
     <p>626-815-3400</p>
   </div>
 
-  <p><strong>Dr. Martin Gomez, Principal</strong><br /><a href="mailto:mgomez@azusa.org">mgomez@azusa.org</a></p>
+  <p><strong>Dr. Martin Gomez, Principal</strong><br><a href="mailto:mgomez@azusa.org">mgomez@azusa.org</a></p>
 </div>
 
 <div class="legal">

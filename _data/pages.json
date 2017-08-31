@@ -162,8 +162,16 @@
         "title": "ASB Information"
       },
       {
+        "url": "/cms/page_view?d=x&piid=&vpid=1488533911143",
+        "title": "Athletic Calendar 2017"
+      },
+      {
         "url": "/cms/page_view?d=x&piid=&vpid=1451900536688",
         "title": "Athletic Clearances"
+      },
+      {
+        "url": "/campusstore",
+        "title": "CAMPUS STORE"
       },
       {
         "url": "/commencement",
@@ -226,6 +234,10 @@
         "title": "Girls Golf"
       },
       {
+        "url": "/cms/page_view?d=x&piid=&vpid=1503566353888",
+        "title": "2017 Fall Rosters"
+      },
+      {
         "url": "/boysbasketball",
         "title": "Boys Basketball"
       },
@@ -270,20 +282,12 @@
         "title": "Track and Field"
       },
       {
-        "url": "/campusstore",
-        "title": "CAMPUS STORE"
-      },
-      {
-        "url": "/cms/page_view?d=x&piid=&vpid=1488533911143",
-        "title": "Athletic Calendar 2017"
-      },
-      {
-        "url": "/cms/page_view?d=x&piid=&vpid=1480073635665",
-        "title": "Athletics"
-      },
-      {
         "url": "/cms/page_view?d=x&piid=&vpid=1476173877217",
         "title": "Azusa High School Clubs"
+      },
+      {
+        "url": "/cms/page_view?d=x&piid=&vpid=1503566353886",
+        "title": "Fall Sports Rosters"
       }
     ]
   },
@@ -347,6 +351,24 @@
       {
         "url": "/partnership",
         "title": "Partnership Opportunities"
+      }
+    ]
+  },
+  {
+    "title": "\nAthletic Calendar 2017\n            ",
+    "pages": [
+      {
+        "url": "/cms/page_view?d=x&piid=&vpid=1488533911143",
+        "title": "Athletic Calendar 2017"
+      }
+    ]
+  },
+  {
+    "title": "\nAthletics\n            ",
+    "pages": [
+      {
+        "url": "/cms/page_view?d=x&piid=&vpid=1503566356353",
+        "title": "Fall Rosters"
       }
     ]
   },

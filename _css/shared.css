@@ -292,12 +292,12 @@
     padding-right: 1em;
     padding: 0.75em 1em 0.75em 0;
   }
-  .nav_public a,
-  .nav_public .selected a,
-  .nav_public a:visited,
-  .nav_public a:hover,
-  .nav_public a:active,
-  .nav_public a:focus {
+  .nav_public li > a,
+  .nav_public .selected li > a,
+  .nav_public li > a:visited,
+  .nav_public li > a:hover,
+  .nav_public li > a:active,
+  .nav_public li > a:focus {
     color: white !important;
     border-width: 0;
   }
