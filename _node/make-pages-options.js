@@ -16,9 +16,7 @@ exports.HEAD_ELEMENT_HTML = `
 
 exports.LOGO_HTML = `
 <a href="/">
-  <img src="/images/azusa.png" width="150" alt="" />
-  <h2>Azusa High School</h2>
-  <p>Home of the Mighty Aztecs</p>
+  <h2><img src="/images/azusa.png" width="150" alt="Azusa High School" /></h2>
 </a>
 `;
 
@@ -30,8 +28,7 @@ exports.FOOTER_HTML = `
     <p>626-815-3400</p>
   </div>
 
-  <p><strong>Linda McNary, Principal</strong><br /><a href="mailto:lmcnary@azusa.org">lmcnary@azusa.org</a></p>
-  <p><strong>Lorrie Brown, School Secretary</strong><br /><a href="mailto:lbrown@azusa.org">lbrown@azusa.org</a></p>
+  <p><strong>Dr. Martin Gomez, Principal</strong><br /><a href="mailto:mgomez@azusa.org">mgomez@azusa.org</a></p>
 </div>
 
 <div class="legal">

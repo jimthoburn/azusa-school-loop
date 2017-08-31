@@ -9,6 +9,41 @@
     color: rgb(40, 41, 43);
   }
 
+  #container_header,
+  #container_home_header {
+    border-top: 2.5em solid rgb(57, 164, 208) !important;
+    background-image: url(/images/aztec-pattern.png), -webkit-linear-gradient(rgb(57, 164, 208) 0%, rgb(57, 164, 208) 1.25em, transparent 1.25em, transparent), url(/images/four-students.png), -webkit-linear-gradient(#dcdede, #fafafa) !important;
+    background-image: url(/images/aztec-pattern.png), linear-gradient(rgb(57, 164, 208) 0%, rgb(57, 164, 208) 1.25em, transparent 1.25em, transparent), url(/images/four-students.png), linear-gradient(#dcdede, #fafafa) !important;
+    background-position: top, top, bottom, top !important;
+    background-size: auto 1.25em, auto, contain, auto !important;
+    background-repeat: repeat-x, repeat, no-repeat, repeat !important;
+    height: 400px !important;
+    padding: 3em !important;
+  }
+
+  #container_header {
+    height: 100px !important;
+  }
+
+  #container_header h2,
+  #container_home_header h2 {
+    margin-top: 0 !important;
+  }
+
+  #container_header img,
+  #container_home_header img {
+    width: 150px !important;
+    height: auto !important;
+  }
+
+  .nav_public {
+    background-image: url(/images/aztec-pattern.png) !important;
+    background-position: bottom !important;
+    background-size: auto 1.25em !important;
+    background-repeat: repeat-x !important;
+    padding-bottom: 1.25em;
+  }
+
   /*
   a {
     color: var(--link-color);
