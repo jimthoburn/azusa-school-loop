@@ -273,6 +273,11 @@
     text-align: left;
   }
 
+  #container_header td,
+  #container_home_header td {
+    vertical-align: middle;
+  }
+
   #container_header p,
   #container_home_header p {
     font-style: italic;
