@@ -28,7 +28,7 @@ exports.FOOTER_HTML = `
     <p>626-815-3400</p>
   </div>
 
-  <p><strong>Dr. Martin Gomez, Principal</strong><br /><a href="mailto:mgomez@azusa.org">mgomez@azusa.org</a></p>
+  <p><strong>Dr. Martin Gomez, Principal</strong><br /><a href="mailto:mgomez4@azusa.org">mgomez4@azusa.org</a></p>
 </div>
 
 <div class="legal">
