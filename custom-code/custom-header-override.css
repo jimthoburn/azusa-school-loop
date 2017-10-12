@@ -8,17 +8,17 @@
 
   .nav_public {
     top: 0;
-    background-image: none !important;
-    padding-bottom: 0em;
-    background-color: rgb(32, 85, 135); /* --dark-ocean */
+    background-color: rgb(0, 174, 239); /* --light-blue */
   }
 
+  /*
   @media (min-width: 1000px) {
     .nav_public ul {
       justify-content: center;
       padding-left: 225px;
     }
   }
+  */
 
   .azusa-home-introduction {
     top: 3em;
@@ -41,13 +41,17 @@
     background: linear-gradient(to top, rgba(0, 0, 0, 0.1), transparent);
   }
 
+  #container_home_header::before {
+    background: rgba(0, 0, 0, 0.5);
+  }
+
+  /*
   @media (min-width: 1000px) {
     #container_header::after {
       top: -1.5em;
     }
   }
 
-  /*
   #container_home_header {
     background-image: url(images/one-student-microscope.png),
                       url(images/one-student-academics.png),
@@ -75,6 +79,7 @@
   }
   */
 
+  /*
   .azusa-about #container_header {
     background-position: center !important;
     background-image: url(images/writing.jpg) !important;
@@ -100,7 +105,6 @@
     background-position: center !important;
   }
 
-  /*
   .azusa-news #container_header {
     background-image: url(images/athletics.jpg) !important;
     background-position: 50% 25% !important;

@@ -5,7 +5,7 @@
   ----------------------------------------------- */
 
   body {
-    background-color: rgba(32, 85, 135, 0.025); /* --dark-ocean */
+    background-color: rgba(57, 164, 208, 0.025); /* --light-blue */
     color: rgb(40, 41, 43);
     min-width: 1000px;
     font-family: "Source Sans Pro", "Open Sans", "Helvetica Neue", Helvetica, sans-serif;
@@ -94,7 +94,7 @@
   }
 
   .azusa-singers #container_header {
-    background-image: url(images/singers.jpg) !important;
+    background-image: url(images/singers-3.jpg) !important;
     background-position: center !important;
   }
 
@@ -260,7 +260,7 @@
   a,
   a:link,
   a:visited {
-    color: rgb(32, 85, 135); /* --dark-ocean */
+    color: rgb(0, 174, 239); /* --light-blue */
   }
 
   a:hover,
@@ -272,7 +272,7 @@
   .block_content_main a,
   .block_content_main a:link,
   .block_content_main a:visited {
-    color: rgb(32, 85, 135); /* --dark-ocean */
+    color: rgb(0, 174, 239); /* --light-blue */
   }
 
   .link_list a,
@@ -283,7 +283,7 @@
     background-image: none;
     background-color: transparent;
     border-width: 0;
-    color: rgb(32, 85, 135); /* --dark-ocean */
+    color: rgb(0, 174, 239); /* --light-blue */
     font-weight: inherit;
     text-decoration: underline;
   }
@@ -306,7 +306,7 @@
     font-weight: bold;
     text-transform: inherit;
     font-family: "Cardo", "Roboto Slab", "Source Sans Pro", "Helvetica Neue", Helvetica, sans-serif;
-    color: rgb(32, 85, 135); /* --dark-ocean */
+    color: rgb(0, 174, 239); /* --light-blue */
   }
 
   .link_list h2,
@@ -316,11 +316,10 @@
   .block_content_main h2,
   .block_content_left h2,
   .block_content_right h2 {
-    font-family: inherit;
     font-weight: bold;
     text-transform: inherit;
     background-image: none;
-    color: rgb(32, 85, 135); /* --dark-ocean */
+    color: rgb(0, 174, 239); /* --light-blue */
     padding-left: 0;
     border-color: rgb(212, 212, 212);
   }
@@ -335,7 +334,7 @@
     font-weight: bold;
     text-transform: inherit;
     background-image: none;
-    color: rgb(32, 85, 135); /* --dark-ocean */
+    color: rgb(0, 174, 239); /* --light-blue */
     padding-left: 25px;
     font-size: 2em;
     line-height: 1.125;
@@ -468,7 +467,7 @@
 
   .nav_public {
     background-image: none;
-    border-color: rgb(32, 85, 135); /* --dark-ocean */
+    border-color: rgb(0, 174, 239); /* --light-blue */
   }
 
   .footer_footnote {
@@ -497,7 +496,7 @@
   .nav_public {
     height: auto;
     min-height: 32px;
-    background: rgb(32, 85, 135); /* --dark-ocean */
+    background: rgb(0, 174, 239); /* --light-blue */
     color: rgba(255, 255, 255, 0.9);
   }
 
@@ -583,7 +582,7 @@
     font-family: inherit;
     font-size: inherit;
     font-weight: inherit;
-    background-color: rgb(32, 85, 135); /* --dark-ocean */
+    background-color: rgb(0, 174, 239); /* --light-blue */
     background-color: black;
     background-color: rgba(0, 0, 0, 0.25);
     color: white;
@@ -805,7 +804,7 @@
   .azusa-home-introduction h3 .lowercase {
     text-transform: inherit;
     font-family: Merriweather, Cardo, 'Roboto', 'Source Sans Pro', 'Helvetica Neue', Helvetica, sans-serif;
-    
+
     /*
     font-weight: 400;
     font-style: italic;
