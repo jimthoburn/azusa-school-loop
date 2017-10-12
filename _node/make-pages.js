@@ -37,6 +37,7 @@ function makePages(pagesData) {
           removeReturnURLs(document, 'href');
           //makeAbsolute(document, 'href');
 
+          removeCustomHeadHTML(document);
           addHeadHTML(document, OPTIONS.HEAD_ELEMENT_HTML);
           replaceLogoHTML(document, OPTIONS.LOGO_HTML);
           replaceFooterHTML(document, OPTIONS.FOOTER_HTML);
@@ -103,6 +104,17 @@ function removeReturnURLs(document, attribute) {
       }
     })(elements[index]);
   }
+}
+
+function removeCustomHeadHTML(document) {
+  var fonts   = document.querySelector('link[href*="fonts.googleapis.com"]');
+  var styles  = document.querySelector('link[href*="jimthoburn.github.io"]');
+  var scripts = document.querySelector('script[src*="jimthoburn.github.io"]');
+
+  var toRemove = [fonts, styles, scripts];
+  toRemove.forEach(function(element) {
+    element.parentNode.removeChild(element);
+  });
 }
 
 function addHeadHTML(document, html) {
