@@ -35,7 +35,7 @@ exports.FOOTER_HTML = `
 </div>
 
 <div class="legal">
-  <h2><a href="http://azusa.org"><img src="/images/azusa-district.png" width="100" height="100" alt="Azusa Unified School District" /></a></h2>
+  <h2><a href="http://azusa.org"><img src="https://ahs-ausd-ca.schoolloop.com/uimg/image/1301752510104/1471331230544/1509779733100.png" width="100" height="100" alt="Azusa Unified School District" /></a></h2>
   <p>The District prohibits, at any district school or school activity, unlawful discrimination, harassment, intimidation, and bullying of any student based on the student’s actual race, color, ancestry, national origin, ethnic group, identication, age, religion, marital or parental status, physical or mental disability, sex, sexual orientation, gender, gender identity, or gender expression; the perception of one or more of such characteristics; or association with a person or group with one or more these actual or perceived characteristics.</p>
 </div>
 `;

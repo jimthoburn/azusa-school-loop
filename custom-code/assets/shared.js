@@ -1,19 +1,37 @@
 
-  // Remove the custom style sheet, if the user is signed in
+  // Remove the custom style sheet, if the user is signed in to the content management system
   (function() {
+    if (!document.querySelector) return;
+
     var timer;
     function check() {
-      if (document.getElementById('cms_tools_top')) {
+
+      // SHIM: This is the best test we could come up with. This does not feel reliable.
+      if (document.getElementById('cms_tools_top') || document.querySelector('meta[name="robots"][content="noindex"]')) {
+
         var stylesheet = document.querySelector('link[href*="jimthoburn.github.io"]');
         if (stylesheet) stylesheet.parentNode.removeChild(stylesheet);
+        clearInterval(timer);
       }
-      clearInterval(timer);
     }
+
+    // Check frequently
     timer = setInterval(check, 10);
+
+    // Check one last time when the DOM has loaded
     document.addEventListener('DOMContentLoaded', function() {
       check();
       clearInterval(timer);
     });
+    // Stop checking when everything has loaded
+    document.addEventListener('load', function() {
+      clearInterval(timer);
+    });
+
+    // If all else fails, stop checking after five seconds
+    setTimeout(function() {
+      clearInterval(timer);
+    }, 5000);
   })();
 
 
