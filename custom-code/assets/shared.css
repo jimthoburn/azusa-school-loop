@@ -58,12 +58,16 @@
     background-position: bottom !important;
     background-size: cover !important;
   }
+  /*
   #container_home_header {
     background-image: url(../images/students.jpg) !important;
   }
+  */
   .azusa-students #container_home_header,
   .azusa-students #container_header {
+    /*
     background-image: url(../images/students.jpg) !important;
+    */
     background-position: bottom !important;
     background-size: cover !important;
   }
@@ -87,6 +91,7 @@
     background-image: url(../images/azusa-border-light.svg);
   }
 
+  /*
   .azusa-singers #container_header {
     background-image: url(../images/singers-3.jpg) !important;
     background-position: center !important;
@@ -114,6 +119,7 @@
     height: 55vh !important;
     min-height: 40vw;
   }
+  */
 
   /*
   .azusa-girls-tennis #container_header {
@@ -128,6 +134,7 @@
   }
   */
 
+  /*
   .azusa-college #container_header {
     background-image: url(../images/college.jpg) !important;
     background-position: center !important;
@@ -150,18 +157,7 @@
     background-image: url(../images/staff.jpg) !important;
     background-position: 50% 40% !important;
   }
-
-  @media (false) and (max-aspect-ratio: 1/1) {
-    /*
-    background-size: 200px auto, auto 80%, auto !important;
-    */
-
-    #container_home_header,
-    #container_header {
-      height: 35vh !important;
-      min-height: unset;
-    }
-  }
+  */
 
   #container_header h2,
   #container_home_header h2 {
